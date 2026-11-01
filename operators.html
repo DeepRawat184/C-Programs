@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="prostyles/unidesign.css">
+  <link rel="stylesheet" href="prostyles/programs.css">
+
+  <title>C | Operators</title>
+</head>
+<body>
+
+  <header>
+    C Programs Practice
+    <a href="index.html">Home</a>
+  </header>
+
+  <section class="back">
+    <a href="index.html">
+       &#8592; Back To Home
+    </a>
+  </section>
+
+
+  <section class="all">
+
+    <div class="about-topic">
+      
+      <div class="topic-pic">
+        <svg width="48" height="48" viewBox="0 0 48 48">
+          <rect width="48" height="48" rx="10" fill="#22C55E"/>
+          <rect x="10" y="10" width="28" height="28" rx="4"
+                fill="none" stroke="white" stroke-width="2"/>
+          <path d="M17 19H25M21 15V23M28 19H33M17 29H25M21 25V33M29 29H33"
+                stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <div class="topic-content">
+
+        <div class="topic-head">
+          <h1>Operators</h1>
+        </div>
+        <div class="topic-body">
+          <p>Practice Question On Operators..!  <br>
+            Note: Operators in C are symbols that perform operations on variables and values. They can be arithmetic, relational, logical, bitwise, assignment, or other types, allowing you to manipulate data and control program flow.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  <!-- end of head -->
+    <div class="all-ques">
+
+           <!-- question 1 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>1.</h2>
+        <h3>Write a program to show that example of pre-increment ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <dos.h>
+#include <conio.h>
+  void main() 
+  {
+    int a = 5;
+
+    clrscr();
+
+    printf("Before increment = %d\n", a);
+    printf("Pre-increment = %d\n", ++a);
+    printf("After increment = %d\n", a);
+
+    }
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Before increment = 5
+Pre-increment = 6
+After increment = 6
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>         
+     <!-- end of question and answer -->
+
+
+             <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>2.</h2>
+        <h3>Write a program to show that example of post-increment ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <dos.h>
+#include <conio.h>
+  void main()
+  {
+    int a = 5;
+
+    clrscr();
+
+    printf("Before increment = %d\n", a);
+    printf("Post-increment = %d\n", a++);
+    printf("After increment = %d\n", a);
+
+    delay(3000);
+
+  }
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Before increment = 5
+Post-increment = 5
+After increment = 6
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>         
+    
+    <!-- end of question and answer -->
+
+
+
+            <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>3.</h2>
+        <h3>Write a program to show that example of pre-decrement ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <dos.h>
+#include <conio.h>
+  void main()
+  {
+    int a = 5;
+
+    printf("Before decrement = %d\n", a);
+    printf("Pre-decrement = %d\n", --a);
+    printf("After decrement = %d\n", a);
+
+    delay(3000);
+
+  }
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Before decrement = 5
+Pre-decrement = 4
+After decrement = 4
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>         
+    
+    <!-- end of question and answer -->
+
+
+
+            <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>4.</h2>
+        <h3>Write a program to show that example of post-decrement ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <dos.h>
+#include <conio.h>
+  void main()
+  {
+    int a = 5;
+
+    clrscr();
+
+    printf("Before decrement = %d\n", a);
+    printf("Post-decrement = %d\n", a--);
+    printf("After decrement = %d\n", a);
+
+    delay(3000);
+
+  }
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Before decrement = 5
+Post-decrement = 5
+After decrement = 4
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>         
+    
+    <!-- end of question and answer -->
+
+
+
+
+            <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>5.</h2>
+        <h3>Write a program to enter 2 numbers from user add the number and show the answer, again take 2 number from user subtract the number display the answer, again take 2 number from user multiply the number display the answer and, again take 2 number from the user divide the number display the answer, again take 2 number find the remainder and display the answer ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <dos.h>
+#include <conio.h>
+  void main()
+  {
+    int a, b;
+
+    clrscr();
+
+int a, b;
+
+    printf("Enter 1st number for addition: ");
+    scanf("%d", &a);
+
+    printf("Enter 2nd number for addition: ");
+    scanf("%d", &b);
+
+    printf("Addition = %d\n", a + b);
+
+
+    printf("\nEnter 1st number for subtraction: ");
+    scanf("%d", &a);
+
+    printf("Enter 2nd number for subtraction: ");
+    scanf("%d", &b);
+
+    printf("Subtraction = %d\n", a - b);
+
+
+    printf("\nEnter 1st number for multiplication: ");
+    scanf("%d", &a);
+
+    printf("Enter 2nd number for multiplication: ");
+    scanf("%d", &b);
+
+    printf("Multiplication = %d\n", a * b);
+
+
+    printf("\nEnter dividend for division: ");
+    scanf("%d", &a);
+
+    printf("Enter divisor for division: ");
+    scanf("%d", &b);
+
+    if (b != 0)
+    {
+        printf("Division = %d\n", a / b);
+    }
+    else
+    {
+        printf("Division by zero is not allowed.\n");
+    }
+
+
+    printf("\nEnter dividend for remainder: ");
+    scanf("%d", &a);
+
+    printf("Enter divisor for remainder: ");
+    scanf("%d", &b);
+
+    if (b != 0)
+    {
+        printf("Remainder = %d\n", a % b);
+    }
+    else
+    {
+        printf("Remainder by zero is not allowed.\n");
+    }
+
+
+    delay(3000);
+
+  }
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter 1st number for addition: 10                 <span>//entered by user</span>
+Enter 2nd number for addition: 5                 <span>//entered by user</span>
+Addition = 15
+
+Enter 1st number for subtraction: 10                 <span>//entered by user</span>
+Enter 2nd number for subtraction: 5                 <span>//entered by user</span>
+Subtraction = 5
+
+Enter 1st number for multiplication: 10                 <span>//entered by user</span>
+Enter 2nd number for multiplication: 5                 <span>//entered by user</span>
+Multiplication = 50
+
+Enter dividend for division: 10                 <span>//entered by user</span>
+Enter divisor for division: 5                 <span>//entered by user</span>
+Division = 2
+
+Enter dividend for remainder: 10                 <span>//entered by user</span>
+Enter divisor for remainder: 3                 <span>//entered by user</span>
+Remainder = 1
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>         
+    
+    <!-- end of question and answer -->
+
+
+
+
+            <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>6.</h2>
+        <h3>Write a program to enter a number from the user, the length of the number is depend on the user, programmer should print the last digit of number ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <dos.h>
+#include <conio.h>
+  void main()
+  {
+    int num, last;
+
+    clrscr();
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    last = num % 10;
+
+    printf("Last digit = %d\n", last);
+
+    delay(3000);
+
+  }
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a number: 12345
+Last digit = 5
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>         
+    
+    <!-- end of question and answer -->
+
+
+
+
+               <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>7.</h2>
+        <h3>Enter a decimal number from the user (float) and print the right hand side of the decimal point ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <dos.h>
+#include <conio.h>
+  void main() 
+  {
+    float num, decimal;
+    int leftnum;
+
+    clrscr();
+
+    printf("Enter a decimal number: ");
+    scanf("%f", &num);
+
+    leftnum = num;
+
+    decimal = num - leftnum;
+
+    printf("Right hand side of decimal = %f\n", decimal);
+
+    delay(3000);
+  }
+  
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a decimal number: 240.34323             <span>//entered by user</span>
+Right hand side of decimal = 0.343431           <span>//floating point precision error</span>
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>         
+     <!-- end of question and answer -->
+
+
+                   <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>8.</h2>
+        <h3>Enter a number from user and find out cube of numbers ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <dos.h>
+#include <conio.h>
+  void main() 
+  {
+   int num, cube;
+
+   clrscr();
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    cube = num * num * num;
+
+    printf("Cube = %d\n", cube);
+
+  delay(3000);
+
+  }
+  
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a number: 6           <span>//entered by user</span>
+Cube = 216
+
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>         
+     <!-- end of question and answer -->
+
+
+
+
+                     <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>9.</h2>
+        <h3>Enter float number from user and round of the number ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <dos.h>
+#include <conio.h>
+  
+  void main() 
+  {
+    float num;
+    int rounded;
+
+    clrscr();
+
+    printf("Enter a number: ");
+    scanf("%f", &num);
+
+    rounded = num;
+
+    if (num - rounded >= 0.5)
+      {
+          rounded = rounded + 1;
+      }
+
+      printf("Rounded number = %d", rounded);
+
+    delay(3000);
+
+  }
+  
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a number: 5.7           <span>// entered by user</span>
+Rounded number = 6
+
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>         
+     <!-- end of question and answer -->
+
+
+
+     
+     <!-- question -->
+     <div class="ques-sol">
+
+      <div class="ques">
+        <h2>10.</h2>
+        <h3>Enter a lower case character from user and print it into upper case ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <dos.h>
+#include <conio.h>
+  
+  void main() 
+  {
+    char ch, upper;
+    
+    clrscr();
+
+    printf("Enter a lowercase character: ");
+    scanf(" %c", &ch);
+
+    upper = ch - 32;
+
+    printf("Uppercase character = %c\n", upper);
+
+    delay(3000);
+
+  }
+  
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a lowercase character: a            <span>//enterd by user</span>
+Uppercase character = A
+
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>         
+     <!-- end of question and answer -->
+
+
+
+
+     <!-- question -->
+     <div class="ques-sol">
+
+      <div class="ques">
+        <h2>11.</h2>
+        <h3>Enter marks of students and calculate average of student’s marks ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <dos.h>
+#include <conio.h>
+  
+  void main() 
+  {
+    int subjects;
+    float total, average;
+
+    clrscr();
+
+    printf("Enter total marks: ");
+    scanf("%d", &total);
+
+    printf("Enter number of subjects: ");
+    scanf("%d", &subjects);
+
+    average = total / subjects;
+
+    printf("Average marks = %.2f", average);
+
+    delay(3000);
+
+  }
+  
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter total marks: 500            <span>//enterd by user</span>
+Enter number of subjects: 6           <span>//enterd by user</span>
+Average marks = 83.333333
+
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>         
+     <!-- end of question and answer -->
+
+
+
+     <!-- question -->
+     <div class="ques-sol">
+
+      <div class="ques">
+        <h2>12.</h2>
+        <h3>Calculate simple interest = (P x R x T)/ 100</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <dos.h>
+#include <conio.h>
+  
+  void main() 
+  {
+    float p, r, t, si;
+
+    clrscr();
+
+    printf("Enter principal amount: ");
+    scanf("%f", &p);
+
+    printf("Enter rate of interest: ");
+    scanf("%f", &r);
+
+    printf("Enter time in years: ");
+    scanf("%f", &t);
+
+    si = (p * r * t) / 100;
+
+    printf("Simple Interest = %f\n", si);
+
+    delay(3000);
+
+  }
+  
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter principal amount: 10000             <span>// entered by user</span>
+Enter rate of interest: 5               <span> // entered by user </span> 
+Enter time in years: 2                <span>// entered by user</span>
+Simple Interest = 1000.00
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>         
+     <!-- end of question and answer -->
+
+
+
+
+     <!-- question -->
+     <div class="ques-sol">
+
+      <div class="ques">
+        <h2>13.</h2>
+        <h3>Enter no. from user and check it is positive even , negative even, positive odd, negative odd or zero.</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+void main()
+{
+    int num1;
+
+    clrscr();
+
+    printf("Enter any integer value: ");
+    scanf("%d", &num1);
+
+    num1 % 2 == 0 && num1 > 0 ?
+    printf("Even positive no.") : printf("");
+
+    num1 % 2 == 0 && num1 < 0 ?
+    printf("Even negative no.") : printf("");
+
+    num1 % 2 != 0 && num1 > 0 ?
+    printf("Odd positive no.") : printf("");
+
+    num1 % 2 != 0 && num1 < 0 ?
+    printf("Odd negative no.") : printf("");
+
+    num1 == 0 ?
+    printf("Zero is entered") : printf("");
+
+    
+    delay(3000);
+
+  }
+  
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter any integer value: 5          <span>//entered by user</span>
+Odd positive no.
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>         
+     <!-- end of question and answer -->
+
+    </div>
+
+  </section>
+
+
+
+</body>
+</html>

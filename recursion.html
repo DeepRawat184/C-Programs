@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="prostyles/unidesign.css">
+  <link rel="stylesheet" href="prostyles/programs.css">
+
+  <title>C | Recursion</title>
+</head>
+<body>
+
+  <header>
+    C Programs Practice
+    <a href="index.html">Home</a>
+  </header>
+
+  <section class="back">
+    <a href="index.html">
+       &#8592; Back To Home
+    </a>
+  </section>
+
+
+  <section class="all">
+
+    <div class="about-topic">
+      
+      <div class="topic-pic">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+          <rect width="64" height="64" rx="14" fill="#7C3AED"/>
+          <rect x="21" y="8" width="22" height="15" rx="4"
+                fill="none" stroke="#FFFFFF" stroke-width="2.2"/>
+          <text x="32" y="18.5" text-anchor="middle"
+                fill="#FFFFFF" font-family="monospace"
+                font-size="10" font-weight="bold">f()</text>
+          <path d="M32 23 V31"
+                fill="none" stroke="#FFFFFF" stroke-width="2.2"
+                stroke-linecap="round"/>
+          <path d="M28 28 L32 32 L36 28"
+                fill="none" stroke="#FFFFFF" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="21" y="33" width="22" height="15" rx="4"
+                fill="none" stroke="#FFFFFF" stroke-width="2.2"/>
+          <text x="32" y="43.5" text-anchor="middle"
+                fill="#FFFFFF" font-family="monospace"
+                font-size="10" font-weight="bold">f()</text>
+          <path d="M43 40 H49 Q54 40 54 34 V17 Q54 13 49 13 H45"
+                fill="none" stroke="#FFFFFF" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M48 9 L43 13 L48 17"
+                fill="none" stroke="#FFFFFF" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+
+      </div>
+
+      <div class="topic-content">
+
+        <div class="topic-head">
+          <h1>Recursion</h1>
+        </div>
+        <div class="topic-body">
+          <p>Practice Question On Recursion..!<br>
+            Note: Recursion is a process in which a function calls itself directly or indirectly. The corresponding function is called a recursive function. Recursion is used to solve problems that can be broken down into smaller, similar subproblems.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    
+    <!-- wefgrhtjklikujyhtrewerthyj -->
+
+    <div class="all-ques">
+
+                   <!-- question 1 -->
+    <div class="ques-sol" style="margin-bottom: 50px; border-top: 1px solid rgb(182, 182, 182);">
+
+      <div class="ques">
+        <h2>1.</h2>
+        <h3>
+          Write a recursive function to calculate the sum of first n natural numbers.
+        </h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#inlude <conio.h>
+#include <dos.h>
+
+int sum(int n) {
+    if (n == 0)
+        return 0;
+    else
+        return n + sum(n-1);
+  }
+
+  void main() {
+    int num;
+    clrscr();
+    printf("Enter a number: ");
+    scanf("%d", &num);  
+    printf("Sum of first %d natural numbers is %d\n", num, sum(num));
+    delay(3000);
+  }
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a number: 4           <span>// entered by user</span>
+Sum of first 4 natural numbers is 10
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+    </div>
+
+
+  </section>
+  
+
+
+</body>
+</html>

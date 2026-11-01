@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="prostyles/unidesign.css">
+  <link rel="stylesheet" href="prostyles/programs.css">
+
+  <title>C | File Handling</title>
+</head>
+<body>
+
+  <header>
+    C Programs Practice
+    <a href="index.html">Home</a>
+  </header>
+
+  <section class="back">
+    <a href="index.html">
+       &#8592; Back To Home
+    </a>
+  </section>
+
+
+  <section class="all">
+
+    <div class="about-topic">
+      
+      <div class="topic-pic">
+               
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+          <rect width="64" height="64" rx="14" fill="#2563EB"/>
+          <path d="M17 11 H36 L46 21 V51 H17 Z"
+                fill="none" stroke="#FFFFFF" stroke-width="2.5"
+                stroke-linejoin="round"/>
+          <path d="M36 11 V21 H46"
+                fill="none" stroke="#FFFFFF" stroke-width="2.5"
+                stroke-linejoin="round"/>
+          <path d="M23 28 H38 M23 33 H34"
+                fill="none" stroke="#FFFFFF" stroke-width="2"
+                stroke-linecap="round"/>
+          <path d="M22 42 H39 M35 38 L39 42 L35 46"
+                fill="none" stroke="#FFFFFF" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+                
+      </div>
+
+      <div class="topic-content">
+
+        <div class="topic-head">
+          <h1>File Handling</h1>
+        </div>
+        <div class="topic-body">
+          <p>Practice Question On File Handling..! <br>
+            Note: File handling in C allows you to create, read, write, and delete files. It is used to store data persistently and retrieve it when needed.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    
+
+    <!-- wefgrhtjklikujyhtrewerthyj -->
+
+
+
+    <div class="all-ques">
+
+
+                   <!-- question 1 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>1.</h2>
+        <h3>
+          Create a file and copy that file into another file.
+        </h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include<stdio.h>
+#include<dos.h>
+#include<conio.h>
+
+void main()
+{
+
+FILE *fp1, *fp2;
+char file1[10], file2[10];
+
+int data;
+//int copy;
+
+clrscr();
+
+printf("Enter File1 Name: ");
+scanf("%s", file1);
+
+printf("Enter Data: \n");
+
+	fp1 = fopen(file1, "w");
+
+if(fp1==NULL)
+{
+ printf("Error! File1 Cannot Open..");
+}
+
+else
+{
+   do
+   {
+	data=getch();  //enter data from use
+
+	if(data!=19)
+	{
+	   if(data==13)
+	   {
+		printf("\n");
+		fputc('\n', fp1);
+	   }
+	   else
+	   {
+		printf("%c", data);
+		fprintf( fp1 , "%c" , data);
+	   }
+	}
+   }
+	while(data!=19);
+
+	fclose(fp1);
+}			//end of else block
+
+
+printf("\n\n Enter File2 Name Where You Want To Copy Above Content or File: ");
+scanf("%s", file2);
+
+fp2 = fopen(file2, "w");
+fp1 = fopen(file1, "r");
+
+if( fp1 == NULL || fp2 == NULL )
+{
+	printf("Error In Opening File");
+}
+
+else
+{
+   do
+     {
+	data = fgetc(fp1);              //storing in data (content of f1)
+
+	if(data!=-1)
+	{
+	   fprintf( fp2 , "%c", data);   //copying it
+	   printf("%c", data);
+	}
+     }
+
+   while(data!= -1);
+
+   printf("Copy Success..!!");
+}
+
+
+
+delay(3000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter File1 Name: DATA.TXT
+
+Enter Data:
+Hello World! This is a file handling program.           <span>Press Ctrt+S to stop entering and save</span>
+
+Enter File2 Name Where You Want To Copy Above Content or File:
+COPY.TXT
+
+Hello World! This is a file handling program.
+Copy Success..!!
+
+</pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+                   <!-- question 2 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>2.</h2>
+        <h3>Create a file and count the number of characters in it.</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include<stdio.h>
+#include<dos.h>
+#include<conio.h>
+
+void main()
+{
+    FILE *fp;
+    char file1[10];
+    int data, count=0;
+
+    clrscr();
+
+    printf("Enter File Name: ");
+    scanf("%s", file1);
+
+    printf("Enter Data: \n");
+
+    fp = fopen(file1, "w");
+
+    if(fp == NULL)
+    {
+        printf("Error! File Cannot Open..");
+    }
+    else
+    {
+        do
+        {
+            data = getch();
+
+            if(data != 19)
+            {
+                if(data == 13)
+                {
+                    printf("\n");
+                    fputc('\n', fp);
+                }
+                else
+                {
+                    printf("%c", data);
+                    fprintf(fp, "%c", data);
+                }
+            }
+        }
+        while(data != 19);
+
+        fclose(fp);
+    }
+
+    fp = fopen(file1, "r");
+
+    if(fp == NULL)
+    {
+        printf("Error In Opening File");
+    }
+    else
+    {
+        while((fgetc(fp)) != EOF)       //EOF means end of file = -1
+        {
+            count++;
+        }
+
+        fclose(fp);
+
+        printf("\n\nTotal Number Of Characters In File = %d", count);
+    }
+
+    delay(3000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter File Name: DATA.TXT     <span>Press Ctrt+S to stop entering and save</span>
+
+Enter Data:
+HELLO WORLD               <span>// entered by user</span>
+
+Total Number Of Characters In File = 11
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+                    <!-- question 3 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>3.</h2>
+        <h3>
+Write a program to create a file and count the number of words in the file</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include<stdio.h>
+#include<dos.h>
+#include<conio.h>
+
+void main()
+{
+    FILE *fp;
+    char file1[10];
+    int data, count=0, inword=0;
+
+    clrscr();
+
+    printf("Enter File Name: ");
+    scanf("%s", file1);
+
+    printf("Enter Data: \n");
+
+    fp = fopen(file1, "w");
+
+    if(fp == NULL)
+    {
+        printf("Error! File Cannot Open..");
+    }
+    else
+    {
+        do
+        {
+            data = getch();
+
+            if(data != 19)
+            {
+                if(data == 13)
+                {
+                    printf("\n");
+                    fputc('\n', fp);
+                }
+                else
+                {
+                    printf("%c", data);
+                    fprintf(fp, "%c", data);
+                }
+            }
+        }
+        while(data != 19);
+
+        fclose(fp);
+    }
+
+    fp = fopen(file1, "r");
+
+    if(fp == NULL)
+    {
+        printf("Error In Opening File");
+    }
+    else
+    {
+        while((data = fgetc(fp)) != EOF)
+        {
+            if(data == ' ' || data == '\n' || data == '\t')
+            {
+                inword = 0;
+            }
+            else if(inword == 0)
+            {
+                count++;
+                inword = 1;
+            }
+        }
+
+        fclose(fp);
+
+        printf("\n\nTotal Number Of Words In File = %d", count);
+    }
+
+    delay(3000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter File Name: DATA.TXT       <span>Press Ctrt+S to stop entering and save</span>
+
+Enter Data:       <span>// entered by user</span>
+Hello World
+This is File Handling         
+
+
+Total Number Of Words In File = 5
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+    </div>
+
+  </section>
+  
+
+
+</body>
+</html>

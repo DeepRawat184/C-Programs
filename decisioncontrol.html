@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="prostyles/unidesign.css">
+  <link rel="stylesheet" href="prostyles/programs.css">
+
+  <title>C | Decision Control Statements</title>
+</head>
+<body>
+
+  <header>
+    C Programs Practice
+    <a href="index.html">Home</a>
+  </header>
+
+  <section class="back">
+    <a href="index.html">
+       &#8592; Back To Home
+    </a>
+  </section>
+
+
+  <section class="all">
+
+    <div class="about-topic">
+      
+      <div class="topic-pic">
+        <svg width="48" height="48" viewBox="0 0 48 48">
+          <rect width="48" height="48" rx="10" fill="#F59E0B"/>
+          <path d="M24 8L37 20L24 32L11 20Z"
+                fill="none" stroke="white" stroke-width="2.5"
+                stroke-linejoin="round"/>
+          <path d="M24 32V39M24 20H31M31 20L28 17M31 20L28 23"
+                fill="none" stroke="white" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="topic-content">
+
+        <div class="topic-head">
+          <h1>Decision Control Statement</h1>
+        </div>
+        <div class="topic-body">
+          <p>Practice Question On Decision Control Statements..!  <br>
+            Note: Decision control statements in C are used to make decisions in a program based on certain conditions. The main decision control statements are if, if-else, and switch.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- end -->
+
+    <div class="all-ques">
+
+                  <!-- question 1 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>1.</h2>
+        <h3>Write a program to enter the number from the user and check it is positive or negative or 0 (zero) ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int num;
+    clrscr();
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if(num > 0)
+        printf("Positive number");
+    else if(num < 0)
+        printf("Negative number");
+    else
+        printf("Zero");
+
+    delay(3000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a number: -11             <span>// entered by user</span>
+Negative number
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+
+
+              <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>2.</h2>
+        <h3>Enter a number from user and check it is odd or even ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int num;
+    clrscr();
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if(num % 2 == 0)
+        printf("Even number");
+    else
+        printf("Odd number");
+
+    delay(3000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a number: 7       <span>// entered by user</span>
+Odd number
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+                  <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>3.</h2>
+        <h3>Enter a number from the user and check that it is of 1 digit or 2 digit or 3 digit or 4 digit or 5 digit ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int num;
+    clrscr();
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if(num < 0)
+        num = -num;
+
+    if(num <= 9)
+        printf("1 digit number");
+    else if(num <= 99)
+        printf("2 digit number");
+    else if(num <= 999)
+        printf("3 digit number");
+    else if(num <= 9999)
+        printf("4 digit number");
+    else if(num <= 99999)
+        printf("5 digit number");
+    else
+        printf("More than 5 digits");
+
+    delay(3000);
+
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a number: 456           <span>// entered by user</span>
+3 digit number
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+                  <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>4.</h2>
+        <h3>Enter a number from the user if the number is between 0 to 40 then we will print fail if the number is between 40 to 60 then we will print C grade ,if the number is between 60 to 80 than we will print B grade ,if the number is between 80 to 100 then we will print A grade and rest all number are invalid ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int marks;
+    clrscr();
+
+    printf("Enter marks: ");
+    scanf("%d", &marks);
+
+    if(marks < 0 || marks > 100)
+        printf("Invalid marks");
+    else if(marks < 40)
+        printf("Fail");
+    else if(marks < 60)
+        printf("C Grade");
+    else if(marks < 80)
+        printf("B Grade");
+    else
+        printf("A Grade");
+
+    delay(3000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter marks: 75           <span>//entered by user</span>
+B Grade
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+                  <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>5.</h2>
+        <h3>Enter a number from the user and check it is a decimal number or not ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    float num;
+    int whole;
+    clrscr();
+
+    printf("Enter a number: ");
+    scanf("%f", &num);
+
+    whole = num;
+
+    if(num == whole)
+        printf("Not a decimal number");
+    else
+        printf("Decimal number");
+
+    delay(3000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a number: 13.13       <span>// entered by user</span>      
+Decimal number
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+
+                  <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>6.</h2>
+        <h3>Enter a number from the user if it is a negative then convert into positive and if it is positive then convert into negative often that print the number ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int num;
+    clrscr();
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    num = -num;
+
+    printf("Converted number = %d", num);
+
+    delay(3000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a number: -25       <span>// entered by user</span>
+Converted number = 25
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+
+                  <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>7.</h2>
+        <h3>Enter a character from the user and check that it is an alphabet ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    char ch;
+    clrscr();
+
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    if((ch >= 'A' && ch <= 'Z') ||
+       (ch >= 'a' && ch <= 'z'))
+        printf("Alphabet");
+    else
+        printf("Not an alphabet");
+
+    delay(3000);
+}
+    </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a character: G        <span>// entered by user</span>
+Alphabet
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+
+     <div class="ques-sol">
+
+      <div class="ques">
+        <h2>8.</h2>
+        <h3>Enter a number from the user if the number is negative then square the number and if it is positive then increment the number 20 times ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int num;
+    clrscr();
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if(num < 0)
+      printf("Square = %d", num * num);
+
+    else if(num > 0)
+    {
+      num = num + 20;
+      printf("Result = %d", num);
+    }
+    else
+        printf("Number is zero");
+
+    delay(3000);
+}
+    </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a number: 15         <span>// entered by user</span>
+Result = 35
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+
+<!-- question 9 -->
+     <div class="ques-sol">
+
+      <div class="ques">
+        <h2>9.</h2>
+        <h3>Enter the number from the user and find it is negative or positive and find out square of that number ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int num, square;
+    clrscr();
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if(num < 0)
+      {
+        printf("Negative number");
+      }
+
+    else if(num > 0)
+      {
+        printf("Positive number");
+      }
+
+    else
+        printf("Zero");
+    
+    square = num * num ;
+
+    printf("\nSquare of %d is %d", num, square);
+
+    delay(3000);
+}
+    </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a number: 15    <span>// entered by user</span>
+Positive number
+Square of 15 is 225
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+
+  <!-- 10 -->
+     <div class="ques-sol">
+
+      <div class="ques">
+        <h2>10.</h2>
+        <h3>Enter two number from user and check which is the greater number and print the greater number ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int a, b;
+    clrscr();
+
+    printf("Enter first number: ");
+    scanf("%d", &a);
+
+    printf("Enter second number: ");
+    scanf("%d", &b);
+
+    if(a > b)
+      {
+        printf("Greater number = %d", a);
+      }
+
+    else if(b > a)
+      {
+        printf("Greater number = %d", b);
+      }
+
+    else
+        printf("Both numbers are equal");
+
+    delay(3000);
+}
+    </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter first number: 25           <span>// entered by user</span>
+Enter second number: 39   <span>//entered by user</span>
+Greater number = 39
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+
+    <!-- 11 -->
+     <div class="ques-sol">
+
+      <div class="ques">
+        <h2>11.</h2>
+        <h3>Enter a number from user and check it is divisible by 4 or not ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int num;
+    clrscr();
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if(num % 4 == 0)
+        printf("Divisible by 4");
+    else
+        printf("Not divisible by 4");
+
+    delay(3000);
+}
+    </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a number: 24          <span>// entered by user</span>
+Divisible by 4
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+
+    <!-- 12 -->
+     <div class="ques-sol">
+
+      <div class="ques">
+        <h2>12.</h2>
+        <h3>Enter a four characters from users and check they are equal or not ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    char a, b, c, d;
+    clrscr();
+
+    printf("Enter first character: ");
+    scanf("%c", &a);
+
+    printf("Enter second character: ");
+    scanf("%c", &b);
+
+    printf("Enter third character: ");
+    scanf(" %c ",  &c );
+
+    printf("Enter forth character: ");
+    scanf("%c", &d);
+
+    if(a == b && b == c && c == d)
+        printf("All characters are equal");
+    else
+        printf("Characters are not equal");
+
+    delay(3000);
+}
+    </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter first character: A         <span>//entered by user</span>
+Enter second character: A           <span>//entered by user</span>
+Enter third character: A         <span>//entered by user</span>
+Enter forth character: A         <span>//entered by user</span>
+All characters are equal
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+
+
+    <!-- question 13 -->
+     <div class="ques-sol">
+
+      <div class="ques">
+        <h2>13.</h2>
+        <h3>Enter three numbers from users and tell which is greater ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int a, b, c;
+    clrscr();
+
+    printf("Enter first numbers: ");
+    scanf("%d", &a );
+
+    printf("Enter second numbers: ");
+    scanf("%d ", &b);
+
+    printf("Enter third numbers: ");
+    scanf(" %d ", &c);
+
+    if(a >= b && a >= c)
+        printf("Greatest = %d", a);
+    else if(b >= a && b >= c)
+        printf("Greatest = %d", b);
+    else
+        printf("Greatest = %d", c);
+
+    delay(3000);
+}
+    </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter first numbers: 11  <span>// entered by user</span>
+Enter second numbers: 45 <span>// entered by user</span>
+Enter third numbers: 34  <span>// entered by user</span>
+Greatest = 45
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+
+    <!-- question 14 -->
+     <div class="ques-sol">
+
+      <div class="ques">
+        <h2>14.</h2>
+        <h3>Enter a number from the user if the user enters 30 then print the month in which we have 30 days. If the enter 31 then print the month 31 days for 28, 29 print the month else everything is invalid ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int days;
+    clrscr();
+
+    printf("Enter number of days: ");
+    scanf("%d", &days);
+
+    if(days == 30)
+      {
+        printf("April, June, September, November");
+      }
+
+    else if(days == 31)
+      {
+        printf("January, March, May, July, August, October, December");
+      }
+
+    else if(days == 28)
+      {
+        printf("February in a common year");
+      }
+
+    else if(days == 29)
+      {
+        printf("February in a leap year");
+      }
+
+    else
+        printf("Invalid number of days");
+
+    delay(3000);
+}
+    </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter number of days: 30        <span>// entered by user</span>
+April, June, September, November
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+
+  <!-- question 15 -->
+     <div class="ques-sol">
+
+      <div class="ques">
+        <h2>15.</h2>
+        <h3>Enter one digit number from user and print in words ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int num;
+    clrscr();
+
+    printf("Enter a one digit number: ");
+    scanf("%d", &num);
+
+    switch(num)
+    {
+        case 0: printf("Zero");
+         break;
+
+        case 1: printf("One");
+         break;
+
+        case 2: printf("Two");
+         break;
+
+        case 3: printf("Three");
+         break;
+
+        case 4: printf("Four");
+         break;
+
+        case 5: printf("Five");
+         break;
+
+        case 6: printf("Six");
+         break;
+
+        case 7: printf("Seven");
+         break;
+
+        case 8: printf("Eight");
+         break;
+
+        case 9: printf("Nine");
+         break;
+
+        default: printf("Invalid input");
+    }
+
+    delay(3000);
+}
+    </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a one digit number: 6      <span>// entered by user</span>
+Six
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+
+    <!-- question 16 -->
+     <div class="ques-sol">
+
+      <div class="ques">
+        <h2>16.</h2>
+        <h3>Enter two characters from user and check both are same or not, if not same then find out difference between them ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    char a, b;
+    int diff;
+    clrscr();
+
+    printf("Enter first character: ");
+    scanf(" %c", &a);
+
+    printf("Enter second character: ");
+    scanf(" %c", &b);
+
+    if(a == b)
+        printf("Both characters are same");
+
+    else
+    {
+        diff = a - b;
+
+        if(diff < 0)
+            diff = -diff;
+
+        printf("Characters are different");
+        printf("\nDifference = %d", diff);
+    }
+
+    delay(3000);
+}
+    </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter first characters: A   <span>// entered by user</span>
+Enter second character: D. <span>// entered by user</span>
+Characters are different
+Difference = 3
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+
+    <!-- question 17 -->
+
+     <div class="ques-sol">
+
+      <div class="ques">
+        <h2>17.</h2>
+        <h3>Enter two digit number from user and print it in word (like 50 will be five zero) ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int num, a, b;
+    clrscr();
+
+    printf("Enter a two digit number: ");
+    scanf("%d", &num);
+
+    if(num < 10 || num > 99)
+        printf("Invalid input");
+    else
+    {
+        a = num / 10;
+        b = num % 10;
+
+        switch(a)
+        {
+            case 1: printf("One "); break;
+            case 2: printf("Two "); break;
+            case 3: printf("Three "); break;
+            case 4: printf("Four "); break;
+            case 5: printf("Five "); break;
+            case 6: printf("Six "); break;
+            case 7: printf("Seven "); break;
+            case 8: printf("Eight "); break;
+            case 9: printf("Nine "); break;
+        }
+
+        switch(b)
+        {
+            case 0: printf("Zero"); break;
+            case 1: printf("One"); break;
+            case 2: printf("Two"); break;
+            case 3: printf("Three"); break;
+            case 4: printf("Four"); break;
+            case 5: printf("Five"); break;
+            case 6: printf("Six"); break;
+            case 7: printf("Seven"); break;
+            case 8: printf("Eight"); break;
+            case 9: printf("Nine"); break;
+        }
+    }
+
+    delay(3000);
+}
+    </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a two digit number: 6 8      <span>// entered by user</span>
+Six Eight
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+
+    <!-- question 19 -->
+     <div class="ques-sol">
+
+      <div class="ques">
+        <h2>19.</h2>
+        <h3>Enter a character from user and it is in upper case, lower case, special characters or numbers ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    char ch;
+    clrscr();
+
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    if(ch >= 'A' && ch <= 'Z')
+        printf("Uppercase alphabet");
+    else if(ch >= 'a' && ch <= 'z')
+        printf("Lowercase alphabet");
+    else if(ch >= '0' && ch <= '9')
+        printf("Number");
+    else
+        printf("Special character");
+
+    delay(3000);
+}
+    </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a character: @    <span>// entered by user</span>
+Special character
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+
+    <!-- question  -->
+     <div class="ques-sol">
+
+      <div class="ques">
+        <h2>20.</h2>
+        <h3>Enter the year from user and check its leap year or not ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int year;
+    clrscr();
+
+    printf("Enter a year: ");
+    scanf("%d", &year);
+
+    if(year>0)
+    {
+
+      if(year % 4 == 0 )
+          printf("Leap year");
+      else
+          printf("Not a leap year");
+    }
+
+    else
+      printf("Invalid Year Name");
+
+    delay(3000);
+}
+    </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a year: 2024   <span>// entered by user</span>
+Leap year
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+
+
+    <!-- question  -->
+     <div class="ques-sol">
+
+      <div class="ques">
+        <h2>21.</h2>
+        <h3>Enter date, month, year and check it is valid date or not ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int dt, mo , yr , max, leap;
+    clrscr();
+
+    printf("Enter date: ");
+    scanf("%d", &dt);
+
+    printf("Enter month: ");
+    scanf("%d", &mo);
+
+    printf("Enter year: ");
+    scanf("%d", &yr);
+
+    if(yr < 1 || mo < 1 || mo > 12 || dt < 1)
+    {
+        printf("Invalid date");
+    }
+    else
+    {
+        if(mo == 4 || mo == 6 || mo == 9 || mo == 11)
+            max = 30;
+        else if(mo == 2)
+        {
+            leap = (yr % 4 == 0 );
+
+            if(leap)
+                max = 29;
+            else
+                max = 28;
+        }
+        else
+            max = 31;
+
+        if(dt <= max)
+            printf("Valid date");
+        else
+            printf("Invalid date");
+    }
+
+    delay(3000);
+}
+    </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter date: 23      <span>// entered by user</span>
+Enter month: 10     <span>// entered by user</span>
+Enter year: 2026    <span>// entered by user</span>
+Valid date
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+
+  
+     <!-- question  -->
+     <div class="ques-sol">
+
+      <div class="ques">
+        <h2>22.</h2>
+        <h3>Enter current date of DOB of user and find out difference ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int curr_dt, curr_mh, curr_yr;
+    int birdt, bir_mont, by;
+    int d, m, y, days;
+    clrscr();
+
+    printf("Enter current date (DD MM YYYY): ");
+    scanf("%d%d%d", &curr_dt, &curr_mh, &curr_yr);
+
+    printf("Enter DOB (DD MM YYYY): ");
+    scanf("%d%d%d", &birdt, &bir_mont, &by);
+
+    if(curr_yr < by ||
+       (curr_yr == by && curr_mh < bir_mont) ||
+       (curr_yr == by && curr_mh == bir_mont && curr_dt < birdt))
+    {
+        printf("Invalid dates");
+    }
+    else
+    {
+        d = curr_dt - birdt;
+        m = curr_mh - bir_mont;
+        y = curr_yr - by;
+
+        if(d < 0)
+        {
+            m--;
+
+            if(curr_mh == 1 || curr_mh == 3 || curr_mh == 5 ||
+               curr_mh == 7 || curr_mh == 8 || curr_mh == 10 ||
+               curr_mh == 12)
+                days = 31;
+            else if(curr_mh == 2)
+                days = 28;
+            else
+                days = 30;
+
+            d = d + days;
+        }
+
+        if(m < 0)
+        {
+            y--;
+            m = m + 12;
+        }
+
+        printf("Age = %d years, %d months, %d days",
+               y, m, d);
+    }
+
+    delay(3000);
+}
+    </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter current date (DD MM YYYY): 29 10 2026     <soan>// entered by user</soan>
+Enter DOB (DD MM YYYY): 15 6 2008   <span>//entered by user</span>
+Age = 18 years, 4 months, 14 days
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+
+
+     <!-- question  -->
+
+     <div class="ques-sol">
+
+      <div class="ques">
+        <h2>23.</h2>
+        <h3>Write a program to calculate area and perimeter of rectangle ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int length, breadth;
+    int area, perimeter;
+    clrscr();
+
+    printf("Enter length: ");
+    scanf("%d", &length);
+
+    printf("Enter breadth: ");
+    scanf("%d", &breadth);
+
+    area = length * breadth;
+    perimeter = 2 * (length + breadth);
+
+    printf("Area = %d", area);
+    printf("\nPerimeter = %d", perimeter);
+
+    delay(3000);
+}
+    </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter length: 10    <span>//entered by user</span>
+Enter breadth: 5
+Area = 50
+Perimeter = 30
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    
+    <!-- end of question and answer -->
+
+
+
+    </div>
+    
+  </section>
+  
+
+
+</body>
+</html>

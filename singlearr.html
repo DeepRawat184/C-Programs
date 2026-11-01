@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="prostyles/unidesign.css">
+  <link rel="stylesheet" href="prostyles/programs.css">
+
+  <title>C | Single Dimensional Arrays</title>
+</head>
+<body>
+
+  <header>
+    C Programs Practice
+    <a href="index.html">Home</a>
+  </header>
+
+  <section class="back">
+    <a href="index.html">
+       &#8592; Back To Home
+    </a>
+  </section>
+
+
+  <section class="all">
+
+    <div class="about-topic">
+      
+      <div class="topic-pic">
+         
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+          <rect width="64" height="64" rx="14" fill="#7C3AED"/>
+
+          <g fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round">
+            <rect x="9" y="23" width="46" height="18" rx="3"/>
+            <path d="M20.5 23 V41 M32 23 V41 M43.5 23 V41"/>
+          </g>
+
+          <g fill="#FFFFFF" font-family="Arial, sans-serif"
+            font-size="8" font-weight="600" text-anchor="middle">
+            <text x="14.7" y="35">1</text>
+            <text x="26.2" y="35">2</text>
+            <text x="37.7" y="35">3</text>
+            <text x="49.2" y="35">4</text>
+          </g>
+        </svg>
+
+      </div>
+
+      <div class="topic-content">
+
+        <div class="topic-head">
+          <h1>Single Dimension Array</h1>
+        </div>
+        <div class="topic-body">
+          <p>Practice Question On Single Dimension Arrays..!  <br>
+            Note: A single-dimensional array in C is a collection of elements of the same type stored in contiguous memory locations. Each element can be accessed using an index.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- wefgrhtjklikujyhtrewerthyj -->
+
+    <div class="all-ques">
+    
+
+                   <!-- question 1 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>1.</h2>
+        <h3>Enter an array from user and display all the values.</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <conio.h>
+#include <dos.h>
+#include <stdio.h>
+
+void main()
+{
+    int a[5], i;
+
+    clrscr();
+
+    printf("Enter 5 values:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+
+    printf("\nArray elements are:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        printf("%d, ", a[i]);
+    }
+
+    delay(3000);
+}
+
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter 5 values:       <span>//entered by user</span>
+4
+5
+6
+3
+5
+
+Array elements are:
+4 5 6 3 5
+
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+                   <!-- question 2 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>2.</h2>
+        <h3>Enter an array from user and print the array in reverse order</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int a[5], i;
+
+    clrscr();
+
+    printf("Enter 5 values:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+      scanf("%d", &a[i]);
+    }
+
+    printf("\nArray in reverse order:\n");
+
+    for(i = 4; i >= 0; i--)
+    {
+      printf("%d ", a[i]);
+    }
+
+    delay(3000);
+}
+     </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter 5 values:         <span>// entered by user</span>
+10
+20
+30
+40
+50
+
+Array in reverse order:
+50 40 30 20 10
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+
+                     <!-- question 3 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>3.</h2>
+        <h3>EEnter an array from user and copy the array into second array?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+        <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int a[5], b[5], i;
+
+    clrscr();
+
+    printf("Enter 5 values:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+
+    for(i = 0; i < 5; i++)
+    {
+        b[i] = a[i];
+    }
+
+    printf("\nSecond array :\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        printf("%d",b[i]);
+    }
+
+    delay(3000);
+}
+     </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter 5 values:       <span>// entered by user</span>
+23
+45
+56
+66
+78
+
+Second array :
+23 45 56 66 78
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+                     <!-- question 4 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>4.</h2>
+        <h3>Enter an array from user and copy it into another array in reverse order?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int a[5], b[5], i;
+
+    clrscr();
+
+    printf("Enter 5 values:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+      scanf("%d", &a[i]);
+    }
+
+    for(i = 0; i < 5; i++)
+    {
+      b[i] = a[4 - i];
+    }
+
+    printf("\nSecond array in reverse order:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        printf("%d ", b[i]);
+    }
+
+    delay(3000);
+}
+     </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter 5 values:         <span>// entered by user</span>
+56
+89
+34
+12
+66
+
+Second array in reverse order:
+66 12 34 89 56
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+
+                     <!-- question 5 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>5.</h2>
+        <h3>Enter an array from user and print the number which is even ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int a[5], i ;
+
+    clrscr();
+
+    printf("Enter 5 values:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+      scanf("%d", &a[i]);
+    }
+
+    printf("\nEven numbers are:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        if(a[i] % 2 == 0)
+        {
+          printf("%d ", a[i]);
+        }
+    }
+
+    delay(3000);
+}
+     </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter 5 values:       <span>// entered by user</span>
+11
+44
+89
+52
+32
+
+Even numbers are:
+44 52 32
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+
+                     <!-- question 6 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>6.</h2>
+        <h3>Enter an array from user and print the number which is positive ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int a[5], i;
+
+    clrscr();
+
+    printf("Enter 5 values:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+
+    printf("\nPositive numbers are:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        if(a[i] > 0)
+        {
+            printf("%d ", a[i]);
+        }
+    }
+
+    delay(3000);
+}
+</textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter 5 values:
+-23
+21
+-34
+56
+12
+
+Positive numbers are:
+21 56 12
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+    
+
+    
+
+                      <!-- question 7 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>7.</h2>
+        <h3>Enter an array from user and square all the values of array ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int a[5], i;
+
+    clrscr();
+
+    printf("Enter 5 values:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+
+    for(i = 0; i < 5; i++)
+    {
+        a[i] = a[i] * a[i];
+    }
+
+    printf("\nSquare of array elements:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        printf("%d ", a[i]);
+    }
+
+    delay(3000);
+}
+  </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter 5 values:     <span>// entered by user</span>
+2
+3
+4
+5
+6
+
+Square of array elements:
+4 9 16 25 36
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+
+
+                        <!-- question 8 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>8.</h2>
+        <h3>Enter 5 values of array from user and print odd number of array ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int a[5], i;
+
+    clrscr();
+
+    printf("Enter 5 values:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+
+    printf("\nOdd numbers are:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        if(a[i] % 2 != 0)
+        {
+            printf("%d ", a[i]);
+        }
+    }
+
+    delay(3000);
+}
+     </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter 5 values:         <span>// entered by user</span>
+11
+20
+31
+40
+51
+
+Odd numbers are:
+11 31 51
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+                        <!-- question 9-->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>9.</h2>
+        <h3>Enter 5 values of array from user and add all values ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int a[5], i, sum = 0;
+
+    clrscr();
+
+    printf("Enter 5 values:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+
+    for(i = 0; i < 5; i++)
+    {
+        sum = sum + a[i];
+    }
+
+    printf("\nSum of array elements = %d", sum);
+
+    delay(3000);
+}
+     </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter 5 values:       <span>// entered by user</span>
+12
+34
+54
+11
+76
+
+Sum of array elements = 187
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+
+                           <!-- question 10-->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>10.</h2>
+        <h3>Enter 5 values of array from user, enter a value from user and search this value in array, if value is found then print “found” or not then print “not found”?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int a[5], i, num, found = 0;
+
+    clrscr();
+
+    printf("Enter 5 values:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+
+    printf("\nEnter value to search: ");
+    scanf("%d", &num);
+
+    for(i = 0; i < 5; i++)
+    {
+        if(a[i] == num)
+        {
+            found = 1;
+            break;
+        }
+    }
+
+    if(found == 1)
+    {
+        printf("\nValue Found");
+    }
+    else
+    {
+        printf("\nValue Not Found");
+    }
+
+    delay(3000);
+}
+     </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter 5 values:
+89
+27
+35
+12
+53
+
+Enter value to search: 60
+
+Value Not Found
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+                             <!-- question 11 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>11.</h2>
+        <h3>Enter five values of array and sort in ascending order ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int a[5], i, j, temp;
+
+    clrscr();
+
+    printf("Enter 5 values:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+
+    for(i = 0; i < 4; i++)
+    {
+        for(j = 0; j < 4 - i; j++)
+        {
+            if(a[j] > a[j + 1])
+            {
+                temp = a[j];
+                a[j] = a[j + 1];
+                a[j + 1] = temp;
+            }
+        }
+    }
+
+    printf("\nArray in ascending order:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        printf("%d ", a[i]);
+    }
+
+    delay(3000);
+}
+         </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter 5 values:         <span>// entered by user</span>
+23
+67
+85
+45
+34
+
+Array in ascending order:
+23 34 45 67 85
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+
+                              <!-- question 12 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>12.</h2>
+        <h3>Find maximum values of array ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int a[5], i, max;
+
+    clrscr();
+
+    printf("Enter 5 values:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+
+    max = a[0];
+
+    for(i = 1; i < 5; i++)
+    {
+        if(a[i] > max)
+        {
+            max = a[i];
+        }
+    }
+
+    printf("\nMaximum value = %d", max);
+
+    delay(3000);
+}
+            </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter 5 values:         <span>// entered by user</span>
+56
+78
+34
+23
+98
+
+Maximum value = 98
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+                                 <!-- question 13 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>13.</h2> 
+        <h3>Find minimum values of array ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int a[5], i, min;
+
+    clrscr();
+
+    printf("Enter 5 values:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+      scanf("%d", &a[i]);
+    }
+
+    min = a[0];
+
+    for(i = 1; i < 5; i++)
+    {
+        if(a[i] < min)
+        {
+          min = a[i];
+        }
+    }
+
+    printf("\nMinimum value = %d", min);
+
+    delay(3000);
+}
+            </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter 5 values:         <span>// entered by user</span>
+23
+45
+67
+34
+23
+
+Minimum value = 23
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+    </div>
+
+  </section>
+  
+
+
+
+</body>
+</html>

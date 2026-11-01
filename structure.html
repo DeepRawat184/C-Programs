@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="prostyles/unidesign.css">
+  <link rel="stylesheet" href="prostyles/programs.css">
+
+  <title>C | Structures</title>
+</head>
+<body>
+
+  <header>
+    C Programs Practice
+    <a href="index.html">Home</a>
+  </header>
+
+  <section class="back">
+    <a href="index.html">
+       &#8592; Back To Home
+    </a>
+  </section>
+
+
+  <section class="all">
+
+    <div class="about-topic">
+      
+      <div class="topic-pic">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+          <rect width="64" height="64" rx="14" fill="#0D9488"/>
+          <rect x="12" y="10" width="40" height="44" rx="5"
+                fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+          <path d="M12 23 H52 M12 34 H52 M12 45 H52"
+                fill="none" stroke="#FFFFFF" stroke-width="2"/>
+          <g fill="#FFFFFF">
+            <rect x="18" y="15" width="10" height="3" rx="1.5"/>
+            <rect x="18" y="27" width="19" height="3" rx="1.5"/>
+            <rect x="18" y="38" width="14" height="3" rx="1.5"/>
+            <rect x="18" y="49" width="21" height="2.5" rx="1.25"/>
+          </g>
+        </svg>
+                
+      </div>
+
+      <div class="topic-content">
+
+        <div class="topic-head">
+          <h1>Structures</h1>
+        </div>
+        <div class="topic-body">
+          <p>Practice Question On Structures..! <br>
+            Note: A structure is a user-defined data type in C that allows grouping of variables of different types under a single name. It is used to represent a record, such as a student or an employee, and can contain various data types like integers, floats, and arrays.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+   
+    <!-- wefgrhtjklikujyhtrewerthyj -->
+
+
+    <div class="all-ques">
+
+
+                     <!-- question 1 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+          <h2>1.</h2>
+        <h3>Write a program to print the message: Today I made my first C Program.</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+struct student
+{
+    int roll;
+    char name[30];
+    float marks;
+};
+
+void main()
+{
+    struct student s[5];
+    int i;
+
+    clrscr();
+
+    /* Taking input from user */
+
+    for(i = 0; i < 5; i++)
+    {
+        printf("\nEnter details of Student %d\n", i + 1);
+
+        printf("Enter Roll Number: ");
+        scanf("%d", &s[i].roll);
+
+        printf("Enter Name: ");
+        scanf("%s", s[i].name);
+
+        printf("Enter Marks: ");
+        scanf("%f", &s[i].marks);
+
+        delay(200);
+    }
+
+    /*  student dtls */
+
+    printf("\n\nStudent Details are:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        printf("\nStudent %d\n", i + 1);
+
+        printf("Roll Number: %d\n", s[i].roll);
+        printf("Name: %s\n", s[i].name);
+        printf("Marks: %f\n", s[i].marks);
+    }
+
+    delay(3000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter details of Student 1
+
+Enter Roll Number: 4001
+Enter Name: Simran
+Enter Marks: 85
+
+Enter details of Student 2
+
+Enter Roll Number: 4003
+Enter Name: Aman
+Enter Marks: 90
+
+Enter details of Student 3
+
+Enter Roll Number: 4005
+Enter Name: Mohit
+Enter Marks: 78
+
+Enter details of Student 4
+
+Enter Roll Number: 4007
+Enter Name: Karan
+Enter Marks: 88
+
+Enter details of Student 5
+
+Enter Roll Number: 4009
+Enter Name: Tanish
+Enter Marks: 92
+
+
+Student Details are:
+
+Student 1
+Roll Number: 4001
+Name: Simran
+Marks: 85.000000
+
+Student 2
+Roll Number: 4003
+Name: Aman
+Marks: 90.000000
+
+Student 3
+Roll Number: 4005
+Name: Mohit
+Marks: 78.000000
+
+Student 4
+Roll Number: 4007
+Name: Karan
+Marks: 88.000000
+
+Student 5
+Roll Number: 4009
+Name: Tanish
+Marks: 92.000000
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+    </div>
+
+  </section>
+  
+
+
+</body>
+</html>

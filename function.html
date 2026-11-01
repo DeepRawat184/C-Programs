@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="prostyles/unidesign.css">
+  <link rel="stylesheet" href="prostyles/programs.css">
+
+  <title>C | Functions</title>
+</head>
+<body>
+
+  <header>
+    C Programs Practice
+    <a href="index.html">Home</a>
+  </header>
+
+  <section class="back">
+    <a href="index.html">
+       &#8592; Back To Home
+    </a>
+  </section>
+
+
+  <section class="all">
+
+    <div class="about-topic">
+      
+      <div class="topic-pic">      
+       
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+          <rect width="64" height="64" rx="14" fill="#EA580C"/>
+          <g fill="none" stroke="#FFFFFF" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="21" y="10" width="22" height="17" rx="4"/>
+            <path d="M32 27 V34 M27 30 L32 35 L37 30"/>
+            <rect x="13" y="37" width="38" height="16" rx="4"/>
+            <path d="M23 45 H41 M36 41 L41 45 L36 49"/>
+          </g>
+        </svg>
+
+      </div>
+
+      <div class="topic-content">
+
+        <div class="topic-head">
+          <h1>Functions</h1>
+        </div>
+        <div class="topic-body">
+          <p>Practice Question On Functions..!  <br>
+            Note: A function in C is a block of code that performs a specific task. Functions help in organizing the code and making it reusable.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    
+    <!-- wefgrhtjklikujyhtrewerthyj -->
+
+    <div class="all-ques">
+
+                   <!-- question 1 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>1.</h2>
+        <h3>Write a program to enter 2 number from the users add them and display the answer, again enter 2 number from the user subtract them and display the answer, again enter 2 number from the user add them and display the answer, again enter 2 number from the user multiply them and display the answer, again enter 2 number from the user subtract them and display the answer, again enter 2 number from the user multiply them and display the answer, again enter 2 number from the user divide them and display the answer, again enter 2 number from the user divide them and display the answer, again enter 2 number from the user add them and display the answer ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include<stdio.h>
+#include<dos.h>
+#include<conio.h>
+
+void add()
+{
+float num1 , num2 ;
+
+printf("Addition:\n");
+printf("Enter 1st Number: ");
+scanf("%f", &num1);
+
+printf("Enter 2nd Number: ");
+scanf("%f", &num2);
+
+printf("%f + %f = %f\n",num1 , num2, num1+num2);
+}
+
+
+void subtract()
+{
+float num1 , num2 ;
+
+printf("Subtraction:\n");
+printf("Enter Number to Subtract From: ");
+scanf("%f", &num1);
+
+printf("Enter Number To Subtact: ");
+scanf("%f", &num2);
+
+printf("%f - %f = %f\n",num1, num2, num1-num2);
+}
+
+void multi()
+{
+
+float num1 , num2;
+
+printf("Multiply: \n");
+printf("Enter 1st Number: ");
+scanf("%f", &num1);
+
+printf("Enter 2nd Number: ");
+scanf("%f", &num2);
+
+printf("%f X %f = %f\n",num1, num2, num1*num2);
+}
+
+
+void divide()
+{
+float num1 , num2 ;
+printf("Divide: \n");
+printf("Enter Divident: ");
+scanf("%f", &num1);
+
+printf("Enter Divisor: ");
+scanf("%f", &num2);
+
+ if(num2 != 0)
+    {
+        printf("%f / %f = %f\n", num1, num2, num1 / num2);
+    }
+    else
+    {
+        printf("Division by zero is not possible.\n");
+    }
+	
+}
+
+
+
+void main()
+{
+clrscr();
+
+add();
+subtract();
+add();
+multi();
+sub();
+multi();
+divide();
+divide();
+add();
+
+delay(3000);
+
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Addition:
+Enter 1st Number: 10
+Enter 2nd Number: 20
+10.000000 + 20.000000 = 30.000000
+
+Subtraction:
+Enter Number to Subtract From: 50
+Enter Number to Subtract: 20
+50.000000 - 20.000000 = 30.000000
+
+Addition:
+Enter 1st Number: 15
+Enter 2nd Number: 25
+15.000000 + 25.000000 = 40.000000
+
+Multiplication:
+Enter 1st Number: 5
+Enter 2nd Number: 4
+5.000000 X 4.000000 = 20.000000
+
+Subtraction:
+Enter Number to Subtract From: 100
+Enter Number to Subtract: 40
+100.000000 - 40.000000 = 60.000000
+
+Multiplication:
+Enter 1st Number: 6
+Enter 2nd Number: 7
+6.000000 X 7.000000 = 42.000000
+
+Division:
+Enter Dividend: 100
+Enter Divisor: 5
+100.000000 / 5.000000 = 20.000000
+
+Division:
+Enter Dividend: 50
+Enter Divisor: 2
+50.000000 / 2.000000 = 25.000000
+
+Addition:
+Enter 1st Number: 30
+Enter 2nd Number: 40
+30.000000 + 40.000000 = 70.000000
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+                   <!-- question 2 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>2.</h2>
+        <h3>Write a program to enter 10 number from the user add the number and display the answer ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+
+void add()
+{
+    int num, i, sum = 0;
+
+    printf("Enter 10 Numbers:\n");
+
+    for(i = 1; i <= 10; i++)
+    {
+        printf("Enter Number %d: ", i);
+        scanf("%d", &num);
+
+        sum = sum + num;
+    }
+
+    printf("\nSum of 10 Numbers = %d", sum);
+}
+
+void main()
+{
+    clrscr();
+
+    add();
+
+    delay(3000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter 10 Numbers:
+
+Enter Number 1: 1
+Enter Number 2: 2
+Enter Number 3: 3
+Enter Number 4: 4
+Enter Number 5: 5
+Enter Number 6: 6
+Enter Number 7: 7
+Enter Number 8: 8
+Enter Number 9: 9
+Enter Number 10: 10
+
+Sum of 10 Numbers = 55
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+
+                   <!-- question 3 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>3.</h2>
+        <h3>Write a program to print the message: Today I made my first C Program.</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include<stdio.h>
+#include<dos.h>
+#include<conio.h>
+
+void main()
+{
+int *fnarr() ;
+int *fp , i;
+clrscr();
+
+fp = fnarr();
+
+
+printf("\n\n Entered Array is: \n ");
+	for(i=0 ; i<5 ; i++)
+	{
+	printf("%d , ", *(fp+i));
+	}
+
+delay(4000);
+}
+
+
+int *fnarr()
+{
+static int arr[5];
+int i=0;
+printf("Enter 5 numbers:\n");
+
+	for(i=0 ; i<5 ; i++)
+	{
+	printf("Enter %d Number: ", i+1);
+	scanf("%d", &arr[i]);
+	}
+
+   return arr;
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter 5 numbers:
+Enter 1 Number: 56    <span>// entered by user</span>
+Enter 2 Number: 67       <span>// entered by user</span>
+Enter 3 Number: 23         <span>// entered by user</span>
+Enter 4 Number: 44           <span>// entered by user</span>
+Enter 5 Number: 10           <span>// entered by user</span>
+
+Entered Array is:
+56 67 23 44 10
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+
+
+                   <!-- question 4a -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>4a.</h2>
+        <h3>Making following program using local and global variable ?  
+          Factorial , Reverse , Palindrome , Prime numbers, Armstrong , Fibonacci.</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+/* Function Declaration */
+
+void factorial();
+void reverse();
+void palindrome();
+void prime();
+void fibonacci();
+
+void main()
+{
+    int choice;
+
+    clrscr();
+
+    printf("===== MENU =====\n");
+
+    printf("1. Factorial\n");
+    printf("2. Reverse of a Number\n");
+    printf("3. Palindrome Number\n");
+    printf("4. Prime Number\n");
+    printf("5. Fibonacci Series\n");
+
+    printf("\nEnter your choice: ");
+    scanf("%d", &choice);
+
+    switch(choice)
+    {
+        case 1:
+            factorial();
+            break;
+
+        case 2:
+            reverse();
+            break;
+
+        case 3:
+            palindrome();
+            break;
+
+        case 4:
+            prime();
+            break;
+
+        case 5:
+            fibonacci();
+            break;
+
+        default:
+            printf("Invalid choice");
+    }
+
+   
+  delay(4000);
+}
+
+
+
+/* 1: Factorial */
+
+void factorial()
+{
+    int num, i;
+    long fact = 1;
+
+    printf("\nEnter any number: ");
+    scanf("%d", &num);
+
+    if(num < 0)
+    {
+        printf("Factorial not possible");
+        return;
+    }
+
+    for(i = 1; i <= num; i++)
+    {
+        fact = fact * i;
+    }
+
+    printf("Factorial = %ld", fact);
+}
+
+
+
+/* 2: Reverse */
+
+void reverse()
+{
+    int num, rem, rvs = 0;
+
+    printf("\nEnter any number: ");
+    scanf("%d", &num);
+
+    while(num > 0)
+    {
+        rem = num % 10;
+        rvs = rvs * 10 + rem;
+        num = num / 10;
+    }
+
+    printf("Reverse number = %d", rvs);
+}
+
+
+
+/* 3: Palindrome */
+
+void palindrome()
+{
+    int num, temp, rem, rvrs = 0;
+
+    printf("\nEnter any number: ");
+    scanf("%d", &num);
+
+    temp = num;
+
+    while(num > 0)
+    {
+        rem = num % 10;
+        rvrs = rvrs * 10 + rem;
+        num = num / 10;
+    }
+
+    if(temp == rvrs)
+    {
+        printf("Palindrome number");
+    }
+    else
+    {
+        printf("Not a palindrome number");
+    }
+}
+
+
+/* 4: Prime Number */
+
+void prime()
+{
+    int num, i, count = 0;
+
+    printf("\nEnter any number: ");
+    scanf("%d", &num);
+
+    if(num <= 1)
+    {
+        printf("Not a prime number");
+        return;
+    }
+
+    for(i = 2; i <= num/2; i++)
+    {
+        if(num % i == 0)
+        {
+            count++;
+        }
+    }
+
+    if(count == 0)
+    {
+        printf("Prime number");
+    }
+    else
+    {
+        printf("Not a prime number");
+    }
+}
+
+
+
+/* 5: Fibonacci Series */
+
+void fibonacci()
+{
+    int num, i;
+    int a = 0, b = 1, c;
+
+    printf("\nEnter number: ");
+    scanf("%d", &num);
+
+    printf("Fibonacci Series: ");
+
+    for(i = 1; i <= num; i++)
+    {
+        printf("%d ", a);
+
+        c = a + b;
+        a = b;
+        b = c;
+    }
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+===== MENU =====
+1. Factorial
+2. Reverse of a Number
+3. Palindrome Number
+4. Prime Number
+5. Armstrong Number
+6. Fibonacci Series
+
+Enter your choice: 1
+
+Enter any number: 5
+Factorial = 120
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+          <!-- question 4b -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>4b.</h2>
+        <h3>Making following program using local and global variable ?  
+          Factorial , Reverse , Palindrome , Prime numbers, Armstrong , Fibonacci.</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+/* Global Variables */
+
+int num, i, rem, rev, temp, count;
+int sum, a, b, c;
+long fact;
+
+/* Function Declaration */
+
+void factorial();
+void reverse();
+void palindrome();
+void prime();
+void fibonacci();
+
+void main()
+{
+    int choice;
+
+    clrscr();
+
+    printf("===== MENU =====\n");
+
+    printf("1. Factorial\n");
+    printf("2. Reverse of a Number\n");
+    printf("3. Palindrome Number\n");
+    printf("4. Prime Number\n");
+    printf("5. Armstrong Number\n");
+    printf("6. Fibonacci Series\n");
+
+    printf("\nEnter your choice: ");
+    scanf("%d", &choice);
+
+    switch(choice)
+    {
+	case 1:
+	    factorial();
+	    break;
+
+	case 2:
+	    reverse();
+	    break;
+
+	case 3:
+	    palindrome();
+	    break;
+
+	case 4:
+	    prime();
+	    break;
+
+	case 5:
+	    fibonacci();
+	    break;
+
+	default:
+	    printf("Invalid choice");
+    }
+
+    delay(3000);
+}
+
+/* Fn 1: Factorial */
+
+void factorial()
+{
+    fact = 1;
+
+    printf("\nEnter any number: ");
+    scanf("%d", &num);
+
+    for(i = 1; i <= num; i++)
+    {
+	fact = fact * i;
+    }
+
+    printf("Factorial = %ld", fact);
+}
+
+/* Fn 2: Reverse */
+
+void reverse()
+{
+    rev = 0;
+
+    printf("\nEnter any number: ");
+    scanf("%d", &num);
+
+    while(num > 0)
+    {
+	rem = num % 10;
+
+	rev = rev * 10 + rem;
+
+	num = num / 10;
+    }
+
+    printf("Reverse number = %d", rev);
+}
+
+/* Fn3: Palindrome */
+
+void palindrome()
+{
+    rev = 0;
+
+    printf("\nEnter any number: ");
+    scanf("%d", &num);
+
+    temp = num;
+
+    while(num > 0)
+    {
+	rem = num % 10;
+
+	rev = rev * 10 + rem;
+
+	num = num / 10;
+    }
+
+    if(temp == rev)
+    {
+	printf("Palindrome number");
+    }
+    else
+    {
+	printf("Not a palindrome number");
+    }
+}
+
+/* Fn 4: Prime Number */
+
+void prime()
+{
+    count = 0;
+
+    printf("\nEnter any number: ");
+    scanf("%d", &num);
+
+    for(i = 2; i <= num/2; i++)
+    {
+	if(num % i == 0)
+	{
+	    count++;
+	    break;
+	}
+    }
+
+    if(count == 0)
+    {
+	printf("Prime number");
+    }
+    else
+    {
+	printf("Not a prime number");
+    }
+}
+
+/* Fn 5: Fibonacci Series */
+
+void fibonacci()
+{
+    a = 0;
+    b = 1;
+
+    printf("\nEnter number: ");
+    scanf("%d", &num);
+
+    printf("Fibonacci Series: ");
+
+    for(i = 1; i <= n; i++)
+    {
+	printf("%d ", a);
+
+	c = a + b;
+
+	a = b;
+
+	b = c;
+    }
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+===== MENU =====
+1. Factorial
+2. Reverse of a Number
+3. Palindrome Number
+4. Prime Number
+5. Armstrong Number
+6. Fibonacci Series
+
+Enter your choice: 2
+
+Enter any number: 1234
+Reverse number = 4321
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+
+
+                   <!-- question 5 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>5.</h2>
+        <h3>Swap numbers using Call by address ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+
+void swap(int *a, int *b)				//a=num1 , b=num2
+{
+    int temp;
+
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void main()
+{
+    int num1, num2;
+
+    clrscr();
+
+    printf("Enter 1st Number: ");
+    scanf("%d", &num1);
+
+    printf("Enter 2nd Number: ");
+    scanf("%d", &num2);
+
+    printf("\nBefore Swapping:\n");
+    printf("Num1 = %d\n", num1);
+    printf("Num2 = %d\n", num2);
+
+    swap(&num1, &num2);
+
+    printf("\nAfter Swapping:\n");
+    printf("Num1 = %d\n", num1);
+    printf("Num2 = %d\n", num2);
+
+    delay(3000);
+}
+
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter 1st Number: 56
+Enter 2nd Number: 23
+
+Before Swapping:
+Num1 = 56
+Num2 = 23
+
+After Swapping:
+Num1 = 23
+Num2 = 56
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+
+
+
+                   <!-- question 6 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>6.</h2>
+        <h3>Swap numbers using Call by function ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+
+void swap(int a, int b)
+{
+    int temp;
+
+    temp = a;
+    a = b;
+    b = temp;
+
+    printf("\nAfter Swapping inside Function:\n");
+    printf("Num1 = %d\n", a);
+    printf("Num2 = %d\n", b);
+}
+
+void main()
+{
+    int num1, num2;
+
+    clrscr();
+
+    printf("Enter 1st Number: ");
+    scanf("%d", &num1);
+
+    printf("Enter 2nd Number: ");
+    scanf("%d", &num2);
+
+    printf("\nBefore Swapping:\n");
+    printf("Num1 = %d\n", num1);
+    printf("Num2 = %d\n", num2);
+
+    swap(num1, num2);
+
+    delay(3000);
+   }
+     </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter 1st Number: 10
+Enter 2nd Number: 20
+
+Before Swapping:
+Num1 = 10
+Num2 = 20
+
+After Swapping inside Function:
+Num1 = 20
+Num2 = 10
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+
+
+
+                   <!-- question 7 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>7.</h2>
+        <h3>Write a program to print the message: Today I made my first C Program.</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+
+int power(int num, int p)
+{
+    int i, ans = 1;
+
+    for(i = 1; i <= p; i++)
+    {
+        ans = ans * num;
+    }
+
+    return ans;
+}
+
+void main()
+{
+    int num, p, result;
+
+    clrscr();
+
+    printf("Enter Base Number: ");
+    scanf("%d", &num);
+
+    printf("Enter Power: ");
+    scanf("%d", &p);
+
+    result = power(num, p);
+
+    printf("\n%d Raised to Power %d = %d", num, p, result);
+
+    delay(3000);
+}
+
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter Base Number: 2
+Enter Power: 6
+
+2 Raised to Power 6 = 64
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+
+
+
+
+                   <!-- question 8 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>8.</h2>
+        <h3>Make function for find out Cube a user entered number ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+
+int cube(int num)
+{
+    return num * num * num;
+}
+
+void main()
+{
+    int num, result;
+
+    clrscr();
+
+    printf("Enter a Number: ");
+    scanf("%d", &num);
+
+    result = cube(num);
+
+    printf("\nCube of %d = %d", num, result);
+
+    delay(3000);
+}
+
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a Number: 4
+
+Cube of 4 = 64
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+    </div>
+  </section>
+  
+
+
+</body>
+</html>

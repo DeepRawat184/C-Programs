@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="prostyles/unidesign.css">
+  <link rel="stylesheet" href="prostyles/programs.css">
+
+  <title>C | Nested Loops</title>
+</head>
+<body>
+
+  <header>
+    C Programs Practice
+    <a href="index.html">Home</a>
+  </header>
+
+  <section class="back">
+    <a href="index.html">
+       &#8592; Back To Home
+    </a>
+  </section>
+
+
+  <section class="all">
+
+    <div class="about-topic">
+      
+      <div class="topic-pic">
+        
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+          <rect x="4" y="4" width="120" height="120" rx="16" fill="#e3fff1"/>
+          <path d="M32 24 H83 Q101 24 101 42 V86 Q101 104 83 104 H32 Q19 104 19 91 V42 Q19 24 32 24 Z"
+                fill="none" stroke="#2563EB" stroke-width="4"
+                stroke-linejoin="round"/>
+          <path d="M75 17 L86 24 L75 31"
+                fill="none" stroke="#2563EB" stroke-width="4"
+                stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="38" y="43" width="44" height="42" rx="8"
+                fill="#D1FAE5" stroke="#059669" stroke-width="3"/>
+          <path d="M49 52 H66 Q73 52 73 59 V67"
+                fill="none" stroke="#059669" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M67 62 L73 68 L79 62"
+                fill="none" stroke="#059669" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M48 74 H63"
+                fill="none" stroke="#047857" stroke-width="3"
+                stroke-linecap="round"/>
+        </svg>
+
+      </div>
+
+      <div class="topic-content">
+
+        <div class="topic-head">
+          <h1>Iteration Control Structure (Nested Loops)</h1>
+        </div>
+        <div class="topic-body">
+          <p>Practice Question On Nested Looping Programs..!  <br>
+            Note: Nested loops in C are loops that are placed inside another loop. The inner loop is executed completely for each iteration of the outer loop.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+<!-- wdfghjytrewertyutrewertyjhrerfghjgf -->
+
+<div class="all-ques">
+
+
+
+               <!-- question 1 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>1.</h2>
+        <h3>Write a program print the pattern on the screen i.e. ?<br>
+          11111<br>
+          11111<br>
+          11111<br>
+        </h3>
+        </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+
+void main()
+{
+    int i, j;
+
+    clrscr();
+
+    for(i = 1; i <= 3; i++)
+    {
+        for(j = 1; j <= 5; j++)
+        {
+            printf("1");
+        }
+
+        printf("\n");
+    }
+
+    delay(3000);
+}
+
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+11111
+11111
+11111
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+
+    <!-- end of question and answer -->
+
+
+
+
+               <!-- question 2 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>2.</h2>
+        <h3>Write a program to print a right-angle triangle using stars.</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+
+void main()
+{
+    int i, j;
+
+    clrscr();
+
+    for(i = 1; i <= 4; i++)
+    {
+        for(j = 1; j <= i; j++)
+        {
+            printf("* ");
+        }
+
+        printf("\n");
+    }
+
+    delay(3000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+*
+* *
+* * *
+* * * *
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+               <!-- question 3 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>3.</h2>
+        <h3>Write a program to print an inverted right-angle triangle using stars.</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+
+void main()
+{
+    int i, j;
+
+    clrscr();
+
+    for(i = 4; i >= 1; i--)
+    {
+        for(j = 1; j <= i; j++)
+        {
+            printf("* ");
+        }
+
+        printf("\n");
+    }
+
+    delay(3000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+* * * *
+* * *
+* *
+*
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+               <!-- question 4 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>4.</h2>
+        <h3>Write a program to print a pyramid using stars.</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+
+void main()
+{
+    int i, j, str;
+
+    clrscr();
+
+    for(i = 1; i <= 4; i++)
+    {
+        for(j = 1; j <= 4-i; j++)
+        {
+            printf(" ");
+        }
+
+        for(str = 1; str <= 2*i-1; str++)
+        {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
+    delay(3000);
+}
+
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+    *
+   ***
+  *****
+ *******
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+               <!-- question 5 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>5.</h2>
+        <h3>Write a program to print an inverted pyramid using stars.</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+
+void main()
+{
+int i,j,a;
+clrscr();
+
+  for(i=4; i>=1; i--)
+  {
+    for(a=4;a>i;a--)
+      printf(" ");
+
+      for(j=1;j<=i;j++)
+      {
+        printf("* ");
+      }
+
+    printf("\n");
+
+  }
+
+delay(2000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+* * * *
+ * * *
+  * *
+   *
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+  </section>
+  
+
+
+</body>
+</html>

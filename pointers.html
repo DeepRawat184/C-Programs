@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="prostyles/unidesign.css">
+  <link rel="stylesheet" href="prostyles/programs.css">
+
+  <title>C | Pointers</title>
+</head>
+<body>
+
+  <header>
+    C Programs Practice
+    <a href="index.html">Home</a>
+  </header>
+
+  <section class="back">
+    <a href="index.html">
+       &#8592; Back To Home
+    </a>
+  </section>
+
+
+  <section class="all">
+
+    <div class="about-topic">
+      
+      <div class="topic-pic">      
+         
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+          <rect width="64" height="64" rx="14" fill="#0D9488"/>
+          <rect x="7" y="23" width="19" height="20" rx="3"
+                fill="none" stroke="#FFFFFF" stroke-width="2"/>
+          <text x="16.5" y="36.5" fill="#FFFFFF"
+                font-family="monospace" font-size="12"
+                font-weight="bold" text-anchor="middle">p</text>
+          <path d="M27 33 H39 M34 28 L39 33 L34 38"
+                fill="none" stroke="#FFFFFF" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round"/>
+
+          <rect x="41" y="23" width="16" height="20" rx="3"
+                fill="none" stroke="#FFFFFF" stroke-width="2"/>
+          <text x="49" y="36.5" fill="#FFFFFF"
+                font-family="monospace" font-size="11"
+                font-weight="bold" text-anchor="middle">x</text>
+          <path d="M12 16 H52"
+                fill="none" stroke="#FFFFFF" stroke-width="2"
+                stroke-linecap="round" opacity="0.8"/>
+          <circle cx="32" cy="16" r="2" fill="#FFFFFF"/>
+        </svg>
+
+      </div>
+
+      <div class="topic-content">
+
+        <div class="topic-head">
+          <h1>Pointers</h1>
+        </div>
+        <div class="topic-body">
+          <p>Practice Question On Use of Pointers..! <br>
+            Note: Pointers are used to store the address of a variable. They are used to access the value of a variable indirectly.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    
+    <!-- wefgrhtjklikujyhtrewerthyj -->
+
+    
+    <div class="all-ques">
+
+
+                   <!-- question 1 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>1.</h2>
+        <h3>Write a C program to enter and print all elements of an array using a pointer.</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int arr[10], i, *ptr;
+
+    clrscr();
+
+    for(i = 0; i <= 9; i++)
+    {
+        ptr = arr;
+
+        printf("Enter Value No %d: ", i + 1);
+        scanf("%d", ptr);
+
+        delay(200);
+    }
+
+    printf("\nValues in array are:\n");
+
+    for(i = 0; i <= 9; i++)
+    {
+        ptr = &arr[i];
+
+        printf("%d\n", *ptr);
+    }
+
+    delay(3000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter Value No 1: 23
+Enter Value No 2: 66
+Enter Value No 3: 45
+Enter Value No 4: 21
+Enter Value No 5: 45
+Enter Value No 6: 78
+Enter Value No 7: 65
+Enter Value No 8: 12
+Enter Value No 9: 90
+Enter Value No 10: 78
+
+Values in array are:
+23
+66
+45
+21
+45
+78
+65
+12
+90
+78  
+          </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+                   <!-- question 2 -->
+    <div class="ques-sol">
+
+      <div class="ques"> 
+        <h2>2.</h2>
+        <h3>Write a program to swap two numbers using pointers.</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void main() {
+    int x = 10, y = 20;
+
+    clrscr();
+    printf("Before swapping: x = %d, y = %d\n", x, y);
+    swap(&x, &y);
+    printf("After swapping: x = %d, y = %d\n", x, y);
+
+    delay(3000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Before swapping: x = 10, y = 20
+After swapping: x = 20, y = 10
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+    </div>
+
+  </section>
+  
+
+
+</body>
+</html>

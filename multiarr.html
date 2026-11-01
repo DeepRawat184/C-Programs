@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="prostyles/unidesign.css">
+  <link rel="stylesheet" href="prostyles/programs.css">
+
+  <title>C | Multi-Dimensional Arrays</title>
+</head>
+<body>
+
+  <header>
+    C Programs Practice
+    <a href="index.html">Home</a>
+  </header>
+
+  <section class="back">
+    <a href="index.html">
+       &#8592; Back To Home
+    </a>
+  </section>
+
+
+  <section class="all">
+
+    <div class="about-topic">
+      
+      <div class="topic-pic">      
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+          <!-- Colorful rounded background -->
+          <rect width="64" height="64" rx="14" fill="#0891B2"/>
+
+          <!-- 2D array grid -->
+          <g fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round">
+            <rect x="13" y="13" width="38" height="38" rx="3"/>
+            <path d="M25.67 13 V51
+                    M38.33 13 V51
+                    M13 25.67 H51
+                    M13 38.33 H51"/>
+          </g>
+        </svg>
+
+      </div>
+
+      <div class="topic-content">
+
+        <div class="topic-head">
+          <h1>Multi-Dimension Array</h1>
+        </div>
+        <div class="topic-body">
+          <p>Practice Question On Multi-Dimension Arrays..!  <br>
+            Note: A multi-dimensional array in C is a collection of elements of the same type stored in a tabular form (rows and columns). Each element can be accessed using multiple indices.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    
+    <!-- wefgrhtjklikujyhtrewerthyj -->
+
+
+    <div class="all-ques">
+
+
+
+                   <!-- question 1 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>1.</h2>
+        <h3>Enter the four number from user and print it into matrix.</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int mtrx[2][2], i, j;
+
+    clrscr();
+
+    printf("Enter four numbers:\n");
+
+    for(i = 0; i < 2; i++)
+    {
+        for(j = 0; j < 2; j++)
+        {
+            scanf("%d", &mtrx[i][j]);
+        }
+    }
+
+    printf("\nMatrix is:\n");
+
+    for(i = 0; i < 2; i++)
+    {
+        for(j = 0; j < 2; j++)
+        {
+            printf("%d\t", mtrx[i][j]);
+        }
+
+        printf("\n");
+    }
+
+    delay(3333);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter four numbers:         <span>// entered by user</span>
+23
+45
+67
+78
+
+Matrix is:
+23      45
+67      78
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+
+
+                   <!-- question 2 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>2.</h2> 
+        <h3>Enter the matrix from and transpose them ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int mtrx[2][2], i, j;
+
+    clrscr();
+
+    printf("Enter 4 elements of matrix:\n");
+
+    for(i = 0; i < 2; i++)
+    {
+        for(j = 0; j < 2; j++)
+          scanf("%d", &mtrx[i][j]);
+    }
+
+    printf("\nOriginal Matrix:\n");
+
+    for(i = 0; i < 2; i++)
+    {
+        for(j = 0; j < 2; j++)
+        {
+            printf("%d\t", mtrx[i][j]);
+        }
+
+        printf("\n");
+    }
+
+    printf("\nTranspose of Matrix:\n");
+
+    for(i = 0; i < 2; i++)
+    {
+        for(j = 0; j < 2; j++)
+        {
+            printf("%d\t", mtrx[j][i]);
+        }
+
+        printf("\n");
+    }
+
+    delay(3000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter 4 elements of matrix:       <span>// entered by user</span>
+49
+26
+12
+88
+
+Original Matrix:
+49      26
+12      88
+
+
+Transpose of Matrix:
+49      12
+26      88
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+
+
+
+                   <!-- question 3 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>3.</h2>
+        <h3>Enter 2 matrix from user and add them ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    int mtx1[2][2], mtr2[2][2], sum[2][2];
+    int i, j;
+
+    clrscr();
+
+    printf("Enter elements of first matrix:\n");
+
+    for(i = 0; i < 2; i++)
+    {
+        for(j = 0; j < 2; j++)
+        {
+            scanf("%d", &mtx1[i][j]);
+        }
+    }
+
+
+    printf("\nMatrix 1 Entered:\n");
+
+    for(i = 0; i < 2; i++)
+    {
+        for(j = 0; j < 2; j++)
+        {
+            printf("%d\t", mtx1[i][j]);
+        }
+
+        printf("\n");
+    }
+
+
+
+    printf("\nEnter elements of second matrix:\n");
+
+    for(i = 0; i < 2; i++)
+    {
+        for(j = 0; j < 2; j++)
+        {
+            scanf("%d", &mtx2[i][j]);
+        }
+    }
+
+
+    printf("\nMatrix 2 Entered:\n");
+
+    for(i = 0; i < 2; i++)
+    {
+        for(j = 0; j < 2; j++)
+        {
+            printf("%d\t", mtx2[i][j]);
+        }
+
+        printf("\n");
+    }
+
+    /* Adding two matrices */
+
+    for(i = 0; i < 2; i++)
+    {
+        for(j = 0; j < 2; j++)
+        {
+            sum[i][j] = mtx1[i][j] + mtx2[i][j];
+        }
+    }
+
+    printf("\nAddition of two matrices:\n");
+
+    for(i = 0; i < 2; i++)
+    {
+        for(j = 0; j < 2; j++)
+        {
+            printf("%d\t", sum[i][j]);
+        }
+
+        printf("\n");
+    }
+
+    delay(3000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter elements of first matrix:   <span>// entered by user</span>
+23
+45
+9
+56
+
+Matrix 1 Entered:
+23      45
+9       56
+
+Enter elements of second matrix:    <span>// entered by user</span>
+44
+66
+11
+22
+
+Matrix 2 Entered:
+44      66
+11      22
+
+Addition of two matrices:
+67      111
+20      78
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+
+
+                   <!-- question 4 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>4.</h2>
+        <h3>Enter 2 matrix from user and multiply them ?</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+
+void main()
+{
+int mtx1[2][2] , mtx2[2][2] , mul[2][2] , i, j, k ;
+
+clrscr();
+
+printf("For Matrix 1:\n");
+for(i=0 ; i<2; i++)
+   {
+      for(j=0; j<2; j++)
+      {
+          printf("Enter value in %d row and %d column: ", i+1 , j+1);
+          scanf("%d", &mtx1[i][j]);
+      }
+        printf("\n");
+   }
+
+printf("\nFor Matrix 2:\n");
+for(i=0 ; i<2; i++)
+   {
+	for(j=0; j<2; j++)
+	{
+	    printf("Enter value in %d row and %d column: ", i+1 , j+1);
+	    scanf("%d", &mtx2[i][j]);
+	}
+	printf("\n");
+   }
+
+
+
+      /*  multiply   */
+
+for(i = 0; i < 2; i++)
+    {
+      for(j = 0; j < 2; j++)
+      {
+          mul[i][j] = 0;
+
+          for(k = 0; k < 2; k++)
+          {
+            mul[i][j] = mul[i][j] + mtx1[i][k] * mtx2[k][j];
+          }
+      }
+    }
+
+
+
+printf("\nFirst Matrix:\n");
+
+    for(i = 0; i < 2; i++)
+    {
+      for(j = 0; j < 2; j++)
+      {
+          printf("%d\t", mtx1[i][j]);
+      }
+	printf("\n");
+    }
+
+
+
+	printf("\nFirst Matrix:\n");
+
+    for(i = 0; i < 2; i++)
+    {
+      for(j = 0; j < 2; j++)
+      {
+          printf("%d\t", mtx2[i][j]);
+      }
+	printf("\n");
+    }
+
+
+	printf("\nMultiplication of Two matrices:\n");
+
+    for(i = 0; i < 2; i++)
+    {
+      for(j = 0; j < 2; j++)
+      {
+          printf("%d\t", mul[i][j]);
+      }
+	printf("\n");
+    }
+
+
+
+delay(3000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+For Matrix 1:
+Enter value in 1 row and 1 column: 1            <span>// entered by user</span>
+Enter value in 1 row and 2 column: 2      <span>// entered by user</span>
+Enter value in 2 row and 1 column: 3      <span>// entered by user</span>
+Enter value in 2 row and 2 column: 4      <span>// entered by user</span>
+
+For Matrix 2:
+Enter value in 1 row and 1 column: 5      <span>// entered by user</span>
+Enter value in 1 row and 2 column: 6      <span>// entered by user</span>
+Enter value in 2 row and 1 column: 7      <span>// entered by user</span>
+Enter value in 2 row and 2 column: 8      <span>// entered by user</span>
+
+First Matrix:
+1       2
+3       4
+
+Second Matrix:
+5       6
+7       8
+
+Multiplication of Two matrices:
+19      22
+43      50
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+
+
+
+                   <!-- question 5 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>5.</h2>
+        <h3>Enter Matrix from user and perform scalar multiplication</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+
+void main()
+{
+int mtx1[2][2] ,cnst=0 , i, j , mul[2][2] ;
+
+clrscr();
+
+printf("For Matrix :\n");
+for(i=0 ; i<2; i++)
+   {
+      for(j=0; j<2; j++)
+      {
+            printf("Enter value in %d row and %d column: ", i+1 , j+1);
+            scanf("%d", &mtx1[i][j]);
+      }
+      printf("\n");
+   }
+
+  printf("Enter constant value: ");
+
+  scanf("%d" , &cnst);
+
+
+
+    for(i = 0; i < 2; i++)
+    {
+      for(j = 0; j < 2; j++)
+      {
+           mul[i][j] = cnst * mtx1[i][j] ;
+      }
+	  printf("\n");
+    }
+
+
+    		printf("\n\nScalar Multiplication: \n");
+
+    for(i = 0; i < 2; i++)
+    {
+      for(j = 0; j < 2; j++)
+      {
+          printf("%d\t", mul[i][j]);
+      }
+	  printf("\n");
+    }
+  
+
+  delay(3000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Matrix 1:
+Enter value in 1 row and 1 column: 21 <span>// entered by user</span>
+Enter value in 1 row and 2 column: 12   <span>// entered by user</span>
+Enter value in 2 row and 1 column: 90     <span>// entered by user</span>
+Enter value in 2 row and 2 column: 55       <span>// entered by user</span>
+
+Enter constant value: 4. <span>// entered by user</span>
+
+Scalar Multiplication: 
+84      48
+360     220
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+    </div>
+
+
+  </section>
+  
+
+
+</body>
+</html>

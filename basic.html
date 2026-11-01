@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="prostyles/unidesign.css">
+  <link rel="stylesheet" href="prostyles/programs.css">
+
+  <title>Basic | Input and Output</title>
+</head>
+<body>
+
+  <header>
+    C Programs Practice
+    <a href="index.html">Home</a>
+  </header>
+
+  <section class="back">
+    <a href="index.html">
+       &#8592; Back To Home
+    </a>
+  </section>
+
+
+  <section class="all">
+
+    <div class="about-topic">
+      
+      <div class="topic-pic">
+        
+          <svg width="48" height="48" viewBox="0 0 48 48">
+          <rect width="48" height="48" rx="10" fill="#0EA5E9"/>
+          <rect x="9" y="11" width="30" height="23" rx="3"
+                fill="none" stroke="white" stroke-width="2.5"/>
+          <path d="M17 39H31M24 34V39M16 19L20 23L16 27M24 27H31"
+                fill="none" stroke="white" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="topic-content">
+
+        <div class="topic-head">
+          <h1>Basic Input Output</h1>
+        </div>
+        <div class="topic-body">
+          <p>Practice Question On Basic Input Output Programs..! <br>
+            Note: Input and output in C is done using functions like printf() for output and scanf() for input. These functions allow you to display information on the screen and read data from the user.
+
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- _______________--------------------_______________--------__________ -->
+    
+    <div class="all-ques">
+         <!-- question 1 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+                <h2>1.</h2>
+        <h3>Write a program to print the message: Today I made my first C Program.</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+  void main() 
+  {
+    printf("Today I made my first C Program.");
+  }
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Today I made my first C Program.
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          <!-- end of question and answer -->
+
+
+
+      <!-- question 2 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+                <h2>2.</h2>
+        <h3>Write a program to read a character from the keyboard and display it on the screen.</h3>
+      </div>
+
+           
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly wrap="off">
+#include <stdio.h>
+#include <conio.h>
+
+  void main()
+  {
+    char ch;
+    printf("Enter Character: ");
+    scanf("%c", &ch );
+    printf("\nThe Entered Character is %c." , ch );
+
+  }
+              
+          </textarea>
+
+          <div class="output">
+            <h4>
+              Output
+            </h4>
+            <pre>
+Enter Character: H                 <span>//entered by user</span>
+
+The Entered Character is H.
+
+            </pre>
+
+          </div>
+
+        </details>
+
+      </div>  <!-- end of solution -->
+
+    </div>       
+     <!-- end of question-solution block -->
+   
+
+      <!-- question  -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>3.</h2>
+        <h3>Write a program to read only 4 characters from the keyboard and display it on the screen in a separate line.</h3>
+      </div>
+
+           
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly wrap="off">
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{
+    char a, b, c, d;
+
+    printf("Enter four characters: ");
+    scanf("%c %c %c %c", &a, &b, &c, &d);
+
+    printf("%c\n", a);
+    printf("%c\n", b);
+    printf("%c\n", c);
+    printf("%c\n", d);
+
+}      
+          </textarea>
+
+          <div class="output">
+            <h4>
+              Output
+            </h4>
+            <pre>
+Enter Four Character: Good                <span>//entered by user</span>
+
+G
+o
+o
+d
+
+            </pre>
+
+          </div>
+
+        </details>
+
+      </div>  <!-- end of solution -->
+
+    </div>        
+    <!-- end of question-solution block -->
+
+
+
+    <!-- question  -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>4.</h2>
+        <h3>Write a program to print your name at center of the first line?</h3>
+      </div>
+
+           
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly wrap="off">
+#include <stdio.h>
+
+void main()
+{
+    printf("\t\t\tDeepanshu Rawat");
+    
+}
+          </textarea>
+
+          <div class="output">
+            <h4>
+              Output
+            </h4>
+            <pre>
+                        Deepanshu Rawat              
+
+            </pre>
+
+          </div>
+
+        </details>
+
+      </div>  <!-- end of solution -->
+
+    </div>        
+    <!-- end of question-solution block -->
+
+
+
+      <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>5.</h2>
+        <h3>Write a program to store single quote and print that variable to show single quote on output screen.</h3>
+      </div>
+
+           
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly wrap="off">
+#include <stdio.h>
+
+void main()
+{
+    char ch = '\' ';
+
+    printf("%c", ch);
+
+ 
+}
+          </textarea>
+
+          <div class="output">
+            <h4>
+              Output
+            </h4>
+            <pre>
+'             
+
+            </pre>
+
+          </div>
+
+        </details>
+
+      </div>  <!-- end of solution -->
+
+    </div>  
+    <!-- end of question and solution  -->
+
+
+
+     <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>6.</h2>
+        <h3>Write a program for printing your name on output screen but your name should blink 5 times</h3>
+      </div>
+
+           
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly wrap="off">
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    printf("Deepanshu Rawat");
+    delay(500);
+   clrscr();
+    delay(500);
+
+    printf("Deepanshu Rawat");
+    delay(500);
+    clrscr();
+    delay(500);
+
+    printf("Deepanshu Rawat");
+    delay(500);
+    clrscr();
+    delay(500);
+
+    printf("Deepanshu Rawat");
+    delay(500);
+    clrscr();
+    delay(500);
+
+    printf("Deepanshu Rawat");
+    delay(500);
+    clrscr();
+    delay(500);
+
+    printf("Deepanshu Rawat");
+
+    delay(1000);
+    
+}
+          </textarea>
+
+          <div class="output">
+            <h4>
+              Output
+            </h4>
+            <pre>
+Deepanshu Rawat         <span>//blink 5 times after every 0.5 seconds</span>
+            </pre>
+
+          </div>
+
+        </details>
+
+      </div>  <!-- end of solution -->
+
+    </div>
+    
+    <!-- end of question and solution.. -->
+
+
+
+     <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>7.</h2>
+        <h3>Write a program to print your name at center of the first line ?</h3>
+      </div>
+
+           
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly wrap="off">
+#include <stdio.h>
+
+void main()
+{
+    printf("\n\n\n\n\n\n\n\n\n\n\t \t   Deepanshu Rawat");
+
+}
+          </textarea>
+
+          <div class="output">
+            <h4>
+              Output
+            </h4>
+            <pre>
+
+
+
+
+
+
+
+
+
+
+                  Deepanshu Rawat                   
+
+
+
+
+
+
+
+
+
+
+
+            </pre>
+
+          </div>
+
+        </details>
+
+      </div>  <!-- end of solution -->
+
+    </div>  
+    <!-- end of question and solution  -->
+
+
+
+
+    <!-- question  -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>8.</h2>
+        <h3>Write the program to display this output ?<br><br>
+#include &lt;stdio.h&gt;   <br>
+#include &lt;conio.h&gt;  <br>
+#include &lt;dos.h&gt;  <br>
+void main ()  <br>
+{ <br>
+clrscr(); <br>
+printf(“hello,welcome to c”); <br>
+delay(5000);  <br>
+} 
+<br>
+</h3>
+      </div>
+
+           
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly wrap="off">
+#include &lt;stdio.h&gt;  
+#include &lt;conio.h&gt; 
+#include &lt;dos.h&gt; 
+
+  void main () 
+  {
+    clrscr();
+    printf(“hello,welcome to c”);
+    delay(5000); 
+  } 
+          </textarea>
+
+          <div class="output">
+            <h4>
+              Output
+            </h4>
+            <pre>
+hello,welcome to c           
+
+            </pre>
+
+          </div>
+
+        </details>
+
+      </div>  <!-- end of solution -->
+
+    </div>        
+    <!-- end of question-solution block -->
+
+
+
+
+    <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>9.</h2>
+        <h3>Enter password display like ****** ?</h3>
+      </div>
+
+           
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly wrap="off">
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    char a, b, c, d, e, f;
+
+    printf("Enter 6 digit password: ");
+
+    a = getch();
+    printf("*");
+
+    b = getch();
+    printf("*");
+
+    c = getch();
+    printf("*");
+
+    d = getch();
+    printf("*");
+
+    e = getch();
+    printf("*");
+
+    f = getch();
+    printf("*");
+
+    printf("\nPassword entered successfully.");
+
+delay(4000);
+}
+
+          </textarea>
+
+          <div class="output">
+            <h4>
+              Output
+            </h4>
+            <pre>
+Enter 6 digit password: ******
+Password entered successfully.    
+
+            </pre>
+
+          </div>
+
+        </details>
+
+      </div>  <!-- end of solution -->
+
+    </div>  
+    
+    <!-- end of question and solution  -->
+
+
+
+
+    <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>10.</h2>
+        <h3>Enter two character from user and print ASCII value ?</h3>
+      </div>
+
+           
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly wrap="off">
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+char ch1, ch2;
+
+    printf("Enter First character: ");
+    scanf("%c", &ch1);
+    printf("Enter Second character: ");
+    scanf("%c" , &ch2);
+
+    printf("ASCII value of %c = %d\n", ch1, ch2);
+    printf("ASCII value of %c = %d\n", ch2, ch2);
+
+delay(4000);
+}
+
+          </textarea>
+
+          <div class="output">
+            <h4>
+              Output
+            </h4>
+            <pre>
+Enter First characters: A           <span>//entered by user</span>
+Enter Second characters: B          <span>//entered by user</span>
+ASCII value of A = 65
+ASCII value of B = 66
+
+            </pre>
+
+          </div>
+
+        </details>
+
+      </div>  <!-- end of solution -->
+
+    </div>  
+    
+    <!-- end of question and solution  -->
+
+
+    <!-- question -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>11.</h2>
+        <h3>
+          Print ASCII value of all characters from 0 to 127 ?
+        </h3>
+      </div>
+
+           
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly wrap="off">
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+  printf("ASCII Value of 0: %c\n", 0);
+  printf("ASCII Value of 1: %c\n", 1);
+  printf("ASCII Value of 2: %c\n", 2);
+  printf("ASCII Value of 3: %c\n", 3);
+  printf("ASCII Value of 4: %c\n", 4);
+  printf("ASCII Value of 5: %c\n", 5);
+  printf("ASCII Value of 6: %c\n", 6);
+  printf("ASCII Value of 7: %c\n", 7);
+  printf("ASCII Value of 8: %c\n", 8);
+  printf("ASCII Value of 9: %c\n", 9);
+  printf("ASCII Value of 10: %c\n", 10);
+  printf("ASCII Value of 11: %c\n", 11);
+  printf("ASCII Value of 12: %c\n", 12);
+  printf("ASCII Value of 13: %c\n", 13);
+  printf("ASCII Value of 14: %c\n", 14);
+  printf("ASCII Value of 15: %c\n", 15);
+  printf("ASCII Value of 16: %c\n", 16);
+  printf("ASCII Value of 17: %c\n", 17);
+  printf("ASCII Value of 18: %c\n", 18);
+  printf("ASCII Value of 19: %c\n", 19);
+  printf("ASCII Value of 20: %c\n", 20);
+  printf("ASCII Value of 21: %c\n", 21);
+  printf("ASCII Value of 22: %c\n", 22);
+  printf("ASCII Value of 23: %c\n", 23);
+  printf("ASCII Value of 24: %c\n", 24);
+  printf("ASCII Value of 25: %c\n", 25);
+  printf("ASCII Value of 26: %c\n", 26);
+  printf("ASCII Value of 27: %c\n", 27);
+  printf("ASCII Value of 28: %c\n", 28);
+  printf("ASCII Value of 29: %c\n", 29);
+  printf("ASCII Value of 30: %c\n", 30);
+  printf("ASCII Value of 31: %c\n", 31);
+  printf("ASCII Value of 32: %c\n", 32);
+  printf("ASCII Value of 33: %c\n", 33);
+  printf("ASCII Value of 34: %c\n", 34);
+  printf("ASCII Value of 35: %c\n", 35);
+  printf("ASCII Value of 36: %c\n", 36);
+  printf("ASCII Value of 37: %c\n", 37);
+  printf("ASCII Value of 38: %c\n", 38);
+  printf("ASCII Value of 39: %c\n", 39);
+  printf("ASCII Value of 40: %c\n", 40);
+  printf("ASCII Value of 41: %c\n", 41);
+  printf("ASCII Value of 42: %c\n", 42);
+  printf("ASCII Value of 43: %c\n", 43);
+  printf("ASCII Value of 44: %c\n", 44);
+  printf("ASCII Value of 45: %c\n", 45);
+  printf("ASCII Value of 46: %c\n", 46);
+  printf("ASCII Value of 47: %c\n", 47);
+  printf("ASCII Value of 48: %c\n", 48);
+  printf("ASCII Value of 49: %c\n", 49);
+  printf("ASCII Value of 50: %c\n", 50);
+  printf("ASCII Value of 51: %c\n", 51);
+  printf("ASCII Value of 52: %c\n", 52);
+  printf("ASCII Value of 53: %c\n", 53);
+  printf("ASCII Value of 54: %c\n", 54);
+  printf("ASCII Value of 55: %c\n", 55);
+  printf("ASCII Value of 56: %c\n", 56);
+  printf("ASCII Value of 57: %c\n", 57);
+  printf("ASCII Value of 58: %c\n", 58);
+  printf("ASCII Value of 59: %c\n", 59);
+  printf("ASCII Value of 60: %c\n", 60);
+  printf("ASCII Value of 61: %c\n", 61);
+  printf("ASCII Value of 62: %c\n", 62);
+  printf("ASCII Value of 63: %c\n", 63);
+  printf("ASCII Value of 64: %c\n", 64);
+  printf("ASCII Value of 65: %c\n", 65);
+  printf("ASCII Value of 66: %c\n", 66);
+  printf("ASCII Value of 67: %c\n", 67);
+  printf("ASCII Value of 68: %c\n", 68);
+  printf("ASCII Value of 69: %c\n", 69);
+  printf("ASCII Value of 70: %c\n", 70);
+  printf("ASCII Value of 71: %c\n", 71);
+  printf("ASCII Value of 72: %c\n", 72);
+  printf("ASCII Value of 73: %c\n", 73);
+  printf("ASCII Value of 74: %c\n", 74);
+  printf("ASCII Value of 75: %c\n", 75);
+  printf("ASCII Value of 76: %c\n", 76);
+  printf("ASCII Value of 77: %c\n", 77);
+  printf("ASCII Value of 78: %c\n", 78);
+  printf("ASCII Value of 79: %c\n", 79);
+  printf("ASCII Value of 80: %c\n", 80);
+  printf("ASCII Value of 81: %c\n", 81);
+  printf("ASCII Value of 82: %c\n", 82);
+  printf("ASCII Value of 83: %c\n", 83);
+  printf("ASCII Value of 84: %c\n", 84);
+  printf("ASCII Value of 85: %c\n", 85);
+  printf("ASCII Value of 86: %c\n", 86);
+  printf("ASCII Value of 87: %c\n", 87);
+  printf("ASCII Value of 88: %c\n", 88);
+  printf("ASCII Value of 89: %c\n", 89);
+  printf("ASCII Value of 90: %c\n", 90);
+  printf("ASCII Value of 91: %c\n", 91);
+  printf("ASCII Value of 92: %c\n", 92);
+  printf("ASCII Value of 93: %c\n", 93);
+  printf("ASCII Value of 94: %c\n", 94);
+  printf("ASCII Value of 95: %c\n", 95);
+  printf("ASCII Value of 96: %c\n", 96);
+  printf("ASCII Value of 97: %c\n", 97);
+  printf("ASCII Value of 98: %c\n", 98);
+  printf("ASCII Value of 99: %c\n", 99);
+  printf("ASCII Value of 100: %c\n", 100);
+  printf("ASCII Value of 101: %c\n", 101);
+  printf("ASCII Value of 102: %c\n", 102);
+  printf("ASCII Value of 103: %c\n", 103);
+  printf("ASCII Value of 104: %c\n", 104);
+  printf("ASCII Value of 105: %c\n", 105);
+  printf("ASCII Value of 106: %c\n", 106);
+  printf("ASCII Value of 107: %c\n", 107);
+  printf("ASCII Value of 108: %c\n", 108);
+  printf("ASCII Value of 109: %c\n", 109);
+  printf("ASCII Value of 110: %c\n", 110);
+  printf("ASCII Value of 111: %c\n", 111);
+  printf("ASCII Value of 112: %c\n", 112);
+  printf("ASCII Value of 113: %c\n", 113);
+  printf("ASCII Value of 114: %c\n", 114);
+  printf("ASCII Value of 115: %c\n", 115);
+  printf("ASCII Value of 116: %c\n", 116);
+  printf("ASCII Value of 117: %c\n", 117);
+  printf("ASCII Value of 118: %c\n", 118);
+  printf("ASCII Value of 119: %c\n", 119);
+  printf("ASCII Value of 120: %c\n", 120);
+  printf("ASCII Value of 121: %c\n", 121);
+  printf("ASCII Value of 122: %c\n", 122);
+  printf("ASCII Value of 123: %c\n", 123);
+  printf("ASCII Value of 124: %c\n", 124);
+  printf("ASCII Value of 125: %c\n", 125);
+  printf("ASCII Value of 126: %c\n", 126);
+  printf("ASCII Value of 127: %c\n", 127);
+
+  delay(4000);
+}
+
+          </textarea>
+
+          <div class="output">
+            <h4>
+              Output
+            </h4>
+            <pre>
+ASCII Value of 0:  null (Non-Printable Charatcter)
+ASCII Value of 1:  SOH (Control Character)
+ASCII Value of 2:  STX (Control Character)
+ASCII Value of 3:  ETX (Control Character)
+ASCII Value of 4:  EOT (Control Character)
+ASCII Value of 5:  ENQ (Control Character)
+ASCII Value of 6:  ACK (Control Character)
+ASCII Value of 7:  BEL (Control Character)
+ASCII Value of 8:  BS  (Backspace)
+ASCII Value of 9:  TAB (Horizontal Tab)
+ASCII Value of 10: LF  (New Line)
+ASCII Value of 11: VT  (Vertical Tab)
+ASCII Value of 12: FF  (Form Feed)
+ASCII Value of 13: CR  (Carriage Return)
+ASCII Value of 14: SO  (Control Character)
+ASCII Value of 15: SI  (Control Character)
+ASCII Value of 16: DLE (Control Character)
+ASCII Value of 17: DC1 (Control Character)
+ASCII Value of 18: DC2 (Control Character)
+ASCII Value of 19: DC3 (Control Character)
+ASCII Value of 20: DC4 (Control Character)
+ASCII Value of 21: NAK (Control Character)
+ASCII Value of 22: SYN (Control Character)
+ASCII Value of 23: ETB (Control Character)
+ASCII Value of 24: CAN (Control Character)
+ASCII Value of 25: EM  (Control Character)
+ASCII Value of 26: SUB (Control Character)
+ASCII Value of 27: ESC (Escape)
+ASCII Value of 28: FS  (Control Character)
+ASCII Value of 29: GS  (Control Character)
+ASCII Value of 30: RS  (Control Character)
+ASCII Value of 31: US  (Control Character)
+ASCII Value of 32:     (Space)
+ASCII Value of 33: !
+ASCII Value of 34: "
+ASCII Value of 35: #
+ASCII Value of 36: $
+ASCII Value of 37: %
+ASCII Value of 38: &
+ASCII Value of 39: '
+ASCII Value of 40: (
+ASCII Value of 41: )
+ASCII Value of 42: *
+ASCII Value of 43: +
+ASCII Value of 44: ,
+ASCII Value of 45: -
+ASCII Value of 46: .
+ASCII Value of 47: /
+ASCII Value of 48: 0
+ASCII Value of 49: 1
+ASCII Value of 50: 2
+ASCII Value of 51: 3
+ASCII Value of 52: 4
+ASCII Value of 53: 5
+ASCII Value of 54: 6
+ASCII Value of 55: 7
+ASCII Value of 56: 8
+ASCII Value of 57: 9
+ASCII Value of 58: :
+ASCII Value of 59: ;
+ASCII Value of 60: <
+ASCII Value of 61: =
+ASCII Value of 62: >
+ASCII Value of 63: ?
+ASCII Value of 64: @
+ASCII Value of 65: A
+ASCII Value of 66: B
+ASCII Value of 67: C
+ASCII Value of 68: D
+ASCII Value of 69: E
+ASCII Value of 70: F
+ASCII Value of 71: G
+ASCII Value of 72: H
+ASCII Value of 73: I
+ASCII Value of 74: J
+ASCII Value of 75: K
+ASCII Value of 76: L
+ASCII Value of 77: M
+ASCII Value of 78: N
+ASCII Value of 79: O
+ASCII Value of 80: P
+ASCII Value of 81: Q
+ASCII Value of 82: R
+ASCII Value of 83: S
+ASCII Value of 84: T
+ASCII Value of 85: U
+ASCII Value of 86: V
+ASCII Value of 87: W
+ASCII Value of 88: X
+ASCII Value of 89: Y
+ASCII Value of 90: Z
+ASCII Value of 91: [
+ASCII Value of 92: \
+ASCII Value of 93: ]
+ASCII Value of 94: ^
+ASCII Value of 95: _
+ASCII Value of 96: `
+ASCII Value of 97: a
+ASCII Value of 98: b
+ASCII Value of 99: c
+ASCII Value of 100: d
+ASCII Value of 101: e
+ASCII Value of 102: f
+ASCII Value of 103: g
+ASCII Value of 104: h
+ASCII Value of 105: i
+ASCII Value of 106: j
+ASCII Value of 107: k
+ASCII Value of 108: l
+ASCII Value of 109: m
+ASCII Value of 110: n
+ASCII Value of 111: o
+ASCII Value of 112: p
+ASCII Value of 113: q
+ASCII Value of 114: r
+ASCII Value of 115: s
+ASCII Value of 116: t
+ASCII Value of 117: u
+ASCII Value of 118: v
+ASCII Value of 119: w
+ASCII Value of 120: x
+ASCII Value of 121: y
+ASCII Value of 122: z
+ASCII Value of 123: {
+ASCII Value of 124: |
+ASCII Value of 125: }
+ASCII Value of 126: ~
+ASCII Value of 127: DEL (Delete Control Character)
+            </pre>
+
+          </div>
+
+        </details>
+
+      </div>  <!-- end of solution -->
+
+    </div>  
+    
+    <!-- end of question and solution  -->
+
+    </div>
+    
+  </section>
+
+
+
+</body>
+</html>
