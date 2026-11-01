@@ -1,0 +1,84 @@
+.about-c
+{
+  background-color: rgba(0, 0, 153, 0.777);
+  padding: 1% 3% 1% 2%;
+  color: white;
+}
+  .about-c h1
+  {
+    margin: 0;
+    font-size: 55px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .about-c p
+  {
+    padding-left:3%;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(212, 212, 212);
+  }
+
+/* top end */
+
+.topics
+{
+  margin: 5%;
+        /* background-color: rgb(255, 255, 114); */
+}
+
+  .topics h1
+  {
+    color: darkblue;
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+
+  .program-box{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 215, 114);
+    border: 8px double goldenrod;
+    border-radius: 10px;
+    gap:5%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .program-box a
+  {
+    min-height:140px ;
+    height: fit-content ;
+    max-width: 250px;
+
+  }
+
+  .box
+  {
+    background-color: rgb(5, 5, 130);
+    border: 3px solid rgb(141, 230, 255);
+    border-radius: 12px;
+    margin:30px 50px;
+    color: white;
+    width: 100%;
+    max-width: 240px;
+    height: 120px;
+    padding: 1%;
+    text-align: center;
+    align-content: center;
+    transition: 0.3s all ease;
+    cursor: pointer;
+  }
+    .box:hover{
+      background-color: rgb(174, 237, 255);
+      color:black;
+      transform: scale(1.1);
+      border: 2px solid rgb(5, 5, 130);
+      border-radius: 20px;
+    }
+
+    .box
+    {
+      font-family: fantasy;
+      font-weight: 900;
+      font-size: 19px ;
+    }
