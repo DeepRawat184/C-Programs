@@ -80,7 +80,7 @@
     <div class="all-ques">
 
                    <!-- question 1 -->
-    <div class="ques-sol" style="margin-bottom: 50px; border-top: 1px solid rgb(182, 182, 182);">
+    <div class="ques-sol">
 
       <div class="ques">
         <h2>1.</h2>
@@ -100,7 +100,7 @@
 
           <textarea readonly>
 #include <stdio.h>
-#inlude <conio.h>
+#include <conio.h>
 #include <dos.h>
 
 int sum(int n) {
@@ -137,6 +137,68 @@ Sum of first 4 natural numbers is 10
     </div>          
     <!-- end of question and answer -->
 
+
+
+
+
+
+                    <!-- question 2 -->
+    <div class="ques-sol">
+
+      <div class="ques">
+        <h2>2.</h2>
+        <h3>
+         Write a recursive function to calculate the factorial of a given number.
+        </h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+int factorial(int n) {
+    if (n == 0)
+        return 1;         // return 1 when n=0, czz factorial of 0 is 1
+    else
+        return n * factorial(n-1);
+}
+
+void main() {
+    int num;
+    clrscr();
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    printf("Factorial of %d is %d\n", num, factorial(num));
+    delay(3000);
+}
+          </textarea>
+
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Enter a number: 7           <span>// entered by user</span>
+Factorial of 7 is 5040
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
 
 
     </div>

@@ -491,6 +491,35 @@ delay(5000);  <br>
           </summary>
 
           <textarea readonly wrap="off">
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+{
+    clrscr();
+
+    printf("#include <stdio.h>\n");
+    printf("#include <conio.h>\n");
+    printf("#include <dos.h>\n\n");
+
+    printf("void main()\n");
+    printf("{\n");
+    printf("    clrscr();\n");
+    printf("    printf(\"hello,welcome to c\");\n");
+    printf("    delay(5000);\n");
+    printf("    getch();\n");
+    printf("}\n");
+
+    getch();
+}
+          </textarea>
+
+          <div class="output">
+            <h4>
+              Output
+            </h4>
+            <pre>
 #include &lt;stdio.h&gt;  
 #include &lt;conio.h&gt; 
 #include &lt;dos.h&gt; 
@@ -501,15 +530,6 @@ delay(5000);  <br>
     printf(“hello,welcome to c”);
     delay(5000); 
   } 
-          </textarea>
-
-          <div class="output">
-            <h4>
-              Output
-            </h4>
-            <pre>
-hello,welcome to c           
-
             </pre>
 
           </div>
