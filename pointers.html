@@ -223,6 +223,69 @@ After swapping: x = 20, y = 10
     <!-- end of question and answer -->
 
 
+
+                   <!-- question 2 -->
+    <div class="ques-sol">
+
+      <div class="ques"> 
+        <h2>2.</h2>
+        <h3>A pointer should point the array and through pointer we will fill all the locations of the array by asking the value from the user and point the array.</h3>
+      </div>
+      
+                  <!-- solution  -->
+      <div class="sol">
+        <details>
+          <summary>
+            <h4 class="sol-head">
+              Solution:
+            </h4>
+          </summary>
+
+          <textarea readonly>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+
+void main()
+ {
+   int arr[10], i, *ptr;
+   clrscr();
+
+   for(i=0; i<=9; i++){
+    ptr=&arr[i];
+    printf("Enter %d value: ", i+1);
+    scanf("%d", ptr);
+   }
+
+  printf("\n\n Value in array are: \n");
+   for(i=0; i<=9; i++)
+   {
+      printf("%d \n", arr[i]);
+   }
+    delay(3000);
+}
+          </textarea>
+          
+          <div class="output">
+            <h4>
+              Output :
+            </h4>
+            <pre>
+Before swapping: x = 10, y = 20
+After swapping: x = 20, y = 10
+            </pre>
+          </div>
+
+        </details>
+
+      </div>    <!--end of sol  -->
+
+    </div>          
+    <!-- end of question and answer -->
+
+
+    </div>
+
     </div>
 
   </section>
